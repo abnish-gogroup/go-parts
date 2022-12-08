@@ -3,15 +3,17 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h3 {
-  color: #000 !important;
+.logo {
+  margin-left: 54px;
 }
 
-.logo {
-  width: 167px;
-  height: 33px;
-  cursor: pointer;
-  margin-left: 54px;
+.padt_85 {
+  padding-top: 85px;
+}
+
+.dfx {
+  display: flex;
+  justify-content: center;
 }
 
 .main_container_login {
@@ -26,7 +28,8 @@ h3 {
 }
 
 .signin_desc {
-  color: #8692a6;
+  color: #262626;
+  font-size: 12px;
 }
 
 .dreg_flex {
@@ -43,11 +46,13 @@ h3 {
   margin: 0 auto;
 }
 
-.sign_in_text {
-  display: flex;
-  flex-direction: column;
-  margin: 35px auto;
-  width: 300px;
+.sign_in_cont {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.signin_txt {
+  font-weight: 700;
 }
 
 .star_class {
@@ -76,6 +81,7 @@ h3 {
 .input_box {
   height: 40px;
   padding: 0 10px;
+  margin-bottom: 10px;
 }
 
 .form_label {
@@ -84,10 +90,7 @@ h3 {
 }
 
 .forgot_password {
-  color: #1e8ea5;
-  font-size: 14px;
-  padding-top: 10px;
-  cursor: pointer;
+  padding: 15px 0 20px 0;
 }
 
 .radio_btn {
@@ -97,10 +100,12 @@ h3 {
 }
 
 .btn-primary {
-  width: 300px;
+  width: 320px;
   background-color: #1e8ea5 !important;
   border-radius: 5px;
   border: 1px solid #1e8ea5 !important;
+  color: #fff;
+  padding: 10px;
 }
 
 .btn-primary:hover {
@@ -109,7 +114,7 @@ h3 {
 }
 
 .l_line {
-  width: 300px;
+  width: 320px;
   text-align: center;
   border-bottom: 1px solid #f5f5f5;
   line-height: 2px;
@@ -123,12 +128,15 @@ h3 {
 }
 
 .google_btn {
-  width: 300px;
+  width: 320px;
   border: none;
   background-color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .google_logo {
@@ -140,6 +148,6 @@ h3 {
 
 .new_user {
   margin-top: 35px;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
 }

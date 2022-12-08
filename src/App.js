@@ -1,12 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Login from './auth/Login';
+import Login from './workshops/workshop_auth/Login';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        go parts
         <Login />
       </header>
     </div>
