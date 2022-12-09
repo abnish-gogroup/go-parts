@@ -1,0 +1,40 @@
+.logo {
+  width: 167px;
+  height: 33px;
+  cursor: pointer;
+  margin-left: 54px;
+}
+
+.right_navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.red_label {
+  width: 4px;
+  height: 4px;
+  background-color: #f32727;
+  // position: absolute;
+  border-radius: 50%;
+}
+
+.profile_class {
+  border: none;
+  margin: 0 15px 0 24px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.logout {
+  border: none;
+  padding-right: 10px;
+  margin: 0 0 0 52px;
+  background: transparent;
+  font-size: 12px;
+}
+
+.top_border {
+  border-top: 1px solid #e4e4e4;
+  width: 107%;
+}

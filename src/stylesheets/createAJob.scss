@@ -1,0 +1,159 @@
+body {
+  background-color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.fa-bell {
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.red_label {
+  width: 4px;
+  height: 4px;
+  background-color: #f32727;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bg_clr {
+  background-color: #f1f5f8;
+}
+
+.main_container_create_a_job {
+  background-color: #fff;
+  margin: 20px 0 20px 200px;
+  font-size: 12px;
+  width: 80%;
+}
+
+.save_btn {
+  width: 178px;
+  height: 33px;
+  margin-bottom: 20px;
+  background-color: #A155B9;
+  color: #fff;
+  font-size: 14px !important;
+  border: none;
+  border-radius: 4px;
+  &:hover {
+    background-color: #fff;
+    color: #A155B9;
+    border: 1px solid #A155B9;
+  }
+}
+
+.create_job_section {
+  font-size: 16px;
+  color: #262626;
+  margin: 24px 200px 10px 121px;
+  position: relative;
+}
+
+.job_title {
+  margin: 40px 0 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_text {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0px !important;
+}
+
+.job_id {
+  color: #8692a6 !important;
+  font-weight: 200 !important;
+  font-size: 18px;
+}
+
+.section > input {
+  height: 40px;
+  border: 1px solid #8692a6 !important;
+  outline: none !important;
+}
+
+.col-6 input::placeholder {
+  color: #ebecf0 !important;
+}
+
+.col-12 input::placeholder {
+  color: #ebecf0 !important;
+}
+
+
+.radio_label_class {
+  padding-right: 24px;
+}
+
+.radio_class_i {
+  margin-right: 10px;
+}
+
+.fa-calendar {
+  margin-right: 10px;
+}
+
+.customer_form {
+  margin-top: 30px;
+}
+
+.create_job {
+  background-color: #1e8ea5;
+  color: #fff;
+  border: none;
+  padding: 8px 17px;
+  border-radius: 3px;
+}
+
+.create_job:hover {
+  background-color: #fff;
+  color: #1e8ea5;
+  border: 1px solid #1e8ea5;
+}
+
+.new_job_btn {
+  text-align: right;
+}
+
+.top_border {
+  border-top: 1px solid #e4e4e4;
+  width: 107%;
+}
+
+.main_side_bar {
+  width: 200px;
+  background-color: #262626;
+  color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 30px;
+  right: auto;
+  min-height: 100%;
+  overflow-y: auto;
+  white-space: nowrap;
+  z-index: 1;
+  padding-left: 15px;
+
+  .navbar-header {
+    width: 100%;
+    margin-bottom: 10px;
+    color: #e4e4e4;
+  }
+  .navbar-nav {
+    li {
+      display: block;
+      width: 100%;
+      padding: 10px 0px;
+      a {
+        font-size: 12px;
+        color: #e4e4e4;
+        .fa {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
-import Login from './workshops/workshop_auth/Login';
+import RouterPath from './workshops/router/RouterPath';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Login />
+        <RouterPath />
       </header>
     </div>
   );
