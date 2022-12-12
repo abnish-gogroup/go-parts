@@ -18,6 +18,7 @@
     color: #e4e4e4;
     font-size: 12px;
   }
+
   .menu-item {
     padding-right: 25px;
     display: block;
@@ -30,6 +31,13 @@
     cursor: pointer;
   }
 }
+
+// .main_container_create_a_job {
+//   background-color: #fff;
+//   margin: 20px 0 20px 200px;
+//   font-size: 12px;
+//   width: 80%;
+// }
 
 .main_side_bar {
   @include sidebar_container;

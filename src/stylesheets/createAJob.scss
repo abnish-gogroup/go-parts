@@ -1,5 +1,4 @@
 body {
-  background-color: #fff;
   font-family: "Inter", sans-serif;
 }
 
@@ -7,6 +6,13 @@ body {
   margin: 5px 10px;
   cursor: pointer;
 }
+
+.create_a_job_cont {
+  width: auto;
+  margin-left: 200px;
+  background-color: #F1F5F8;
+}
+
 
 .red_label {
   width: 4px;
@@ -20,22 +26,22 @@ body {
   background-color: #f1f5f8;
 }
 
-.main_container_create_a_job {
-  background-color: #fff;
-  margin: 20px 0 20px 200px;
-  font-size: 12px;
-  width: 80%;
-}
-
-.save_btn {
-  width: 178px;
+@mixin act_btn {
+  width: auto;
   height: 33px;
   margin-bottom: 20px;
-  background-color: #A155B9;
   color: #fff;
   font-size: 14px !important;
   border: none;
   border-radius: 4px;
+}
+
+.save_btn {
+  @include act_btn;
+  float: right;
+  margin-right: 100px;
+  background-color: #A155B9;
+
   &:hover {
     background-color: #fff;
     color: #A155B9;
@@ -43,15 +49,30 @@ body {
   }
 }
 
+.upload_btn {
+  @include act_btn;
+  background-color: #1E8EA5;
+
+  &:hover {
+    background-color: #fff;
+    color: #1E8EA5;
+    border: 1px solid #1E8EA5;
+  }
+}
+
 .create_job_section {
   font-size: 16px;
   color: #262626;
-  margin: 24px 200px 10px 121px;
+  margin: 24px 100px 10px 50px;
   position: relative;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
 }
 
 .job_title {
-  margin: 40px 0 0 60px;
+  margin: 0px 100px 0 50px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -68,7 +89,7 @@ body {
   font-size: 18px;
 }
 
-.section > input {
+.login_cont>input {
   height: 40px;
   border: 1px solid #8692a6 !important;
   outline: none !important;
@@ -117,10 +138,10 @@ body {
   text-align: right;
 }
 
-.top_border {
-  border-top: 1px solid #e4e4e4;
-  width: 107%;
-}
+// .top_border {
+//   border-top: 1px solid #e4e4e4;
+//   // width: 107%;
+// }
 
 .main_side_bar {
   width: 200px;
@@ -142,14 +163,17 @@ body {
     margin-bottom: 10px;
     color: #e4e4e4;
   }
+
   .navbar-nav {
     li {
       display: block;
       width: 100%;
       padding: 10px 0px;
+
       a {
         font-size: 12px;
         color: #e4e4e4;
+
         .fa {
           margin-right: 8px;
         }

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-import PartsResultLoader from "../partsChecker/PartsResultLoader";
+import PartsResultLoader from '../../common/PartsResultsLoader';
 
-import "../../../../assets/stylesheets/dashboard/oePaperReadout.scss";
-import { getParameterByName, pushUrlToState, randomIntFromInterval } from '../../helpers/Utils';
+import '../../stylesheets/oePaparReadout.scss';
+import { getParameterByName, pushUrlToState, randomIntFromInterval } from '../helper/Utils';
 import classnames from "classnames";
 
 import ResultPageCard from "./ResultPageCard";
-import RecentTable from '../partsChecker/RecentTable';
+import RecentTable from './RecentTable';
 
-import * as partsCheckerData from '../../constants/partsCheckerData';
+import * as partsCheckerData from '../constants/partsCheckerData';
 
 
 function OePaperReadout(props) {
@@ -18,7 +18,7 @@ function OePaperReadout(props) {
 
   useEffect(() => {
 
-    checkForDataFromParams()
+    // checkForDataFromParams()
 
   }, []);
 
@@ -64,15 +64,15 @@ function OePaperReadout(props) {
     }
   }
 
-  function checkForDataFromParams() {
-    let isRedirectFromPartsChecker = getParameterByName('is_redirect');
-    if (isRedirectFromPartsChecker) {
-      updateNormalReadoutType(false);
-      document.getElementById('oe-readout-type').value = 'advanced';
-    } else {
-      actions.oeReadOutAction.resetOEData();
-    }
-  }
+  // function checkForDataFromParams() {
+  //   let isRedirectFromPartsChecker = getParameterByName('is_redirect');
+  //   if (isRedirectFromPartsChecker) {
+  //     updateNormalReadoutType(false);
+  //     document.getElementById('oe-readout-type').value = 'advanced';
+  //   } else {
+  //     actions.oeReadOutAction.resetOEData();
+  //   }
+  // }
 
   function startFetchingPartNumbers() {
     updateCheckedPartsData([]);

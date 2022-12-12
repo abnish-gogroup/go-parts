@@ -22,14 +22,15 @@ body {
   width: 100%;
 }
 
-.top_border {
-  border-top: 1px solid #e4e4e4;
-  width: 107%;
-}
+// .top_border {
+//   border-top: 1px solid #e4e4e4;
+//   // width: 107%;
+// }
 
 .signin_desc {
   color: #262626;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .dreg_flex {
@@ -37,7 +38,7 @@ body {
   flex-direction: column;
 }
 
-.section {
+.login_cont {
   font-size: 16px;
   color: #696f79;
   text-align: center;
@@ -49,6 +50,7 @@ body {
 .sign_in_cont {
   text-align: center;
   margin: 0 auto;
+  line-height: 28px;
 }
 
 .signin_txt {
@@ -65,7 +67,7 @@ body {
 .registration_form {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .text_center {

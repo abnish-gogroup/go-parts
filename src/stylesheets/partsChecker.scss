@@ -1,0 +1,368 @@
+.input-container {
+  padding: 20px;
+  width: 92%;
+  min-height: 200px;
+  background: #FFFFFF;
+  border: 1px solid #E6E7EE;
+  border-radius: 6px;
+  min-height: 70px;
+}
+
+.input-parts-checker {
+  vertical-align: top;
+}
+
+.input-area {
+  background: #F0F5F7;
+  border-radius: 4px;
+  height: 40px;
+  width: 45%;
+  margin-right: 20px;
+  border: none;
+  padding: 16px 34px 15px 15px;
+  outline: none;
+  font-family: Inter, 'sans-serif';
+}
+
+.pdt_8 {
+  padding: 8px 34px 15px 15px !important;
+}
+
+.input-fields {
+  width: calc(100% - 200px);
+}
+
+.parts-checker-heading {
+  justify-content: space-between;
+}
+
+.scale:hover {
+  transform: scale(1.05);
+}
+
+.search-container {
+  width: max-content;
+  background: #FE696E;
+  color: #FFFFFF;
+  padding: 12px 40px;
+  margin-right: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  max-height: 40px;
+}
+
+.search-results-container {
+  margin-top: 40px;
+}
+
+.recent-table-container {
+  width: 96.6%;
+}
+
+.tooltip-holder {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.table-container {
+  background: #FFFFFF;
+  border: 1px solid #E6E7EE;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.success-bg {
+  background-color: #2DB695;
+}
+
+.warning-bg {
+  background-color: #F39261;
+}
+
+.error-bg {
+  background-color: #F16063;
+}
+
+.border-red {
+  border: 1px solid red;
+}
+
+.icon-container {
+  height: 20px;
+  width: 20px;
+  padding: 4px 6px;
+  color: white;
+  border-radius: 50%;
+}
+
+.success-label,
+.error-label,
+.inconclusive-label {
+  color: #2DB695;
+  border-radius: 4px;
+  width: max-content;
+  height: 25px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.error-label {
+  color: #F16063;
+}
+
+.inconclusive-label {
+  color: #F39261;
+}
+
+.text-indication {
+  font-style: italic;
+  font-weight: normal;
+  line-height: 23px;
+  opacity: 0.7;
+}
+
+.header-section {
+  padding: 5px 10px;
+  z-index: 11;
+
+  &:hover {
+    .header-section-dd {
+      display: inline-block;
+    }
+  }
+}
+
+.header-section-text {
+  padding-left: 5px;
+}
+
+.header-section-dd {
+  width: max-content;
+  position: absolute;
+  right: 120px;
+  top: 22px;
+  display: none;
+  text-align: left;
+  padding-top: 20px;
+  z-index: 99;
+
+  .header-section-dd-section {
+    margin: 16px 0;
+  }
+
+  .header-section-dd-separator {
+    border-top: 1px solid #C7C7C7;
+  }
+
+  .header-section-dd-psuedo {
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 0 16px;
+  }
+
+  &:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    right: 7px;
+    top: 1px;
+    border: 10px solid transparent;
+    border-bottom-color: #C7C7C7;
+  }
+}
+
+.search-results-list-heading {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  align-items: center;
+  background: #FAFAFB;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-shadow: inset 0px -1px 0px #edf2f7;
+}
+
+.vehicle-cell {
+  width: 29%;
+}
+
+.result-cell {
+  width: 30%;
+}
+
+.tac {
+  text-align: center;
+}
+
+.part-cell {
+  width: 15%;
+}
+
+.price-cell {
+  width: 5%;
+}
+
+.resullt-message {
+  width: 230px;
+  height: 50px;
+}
+
+.date-cell {
+  width: 22%;
+}
+
+.search-results-list-item {
+  background: #ffffff;
+  z-index: 1;
+  min-height: 48px;
+  border-bottom: 1px solid #fafafa;
+  align-items: center;
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+  .order-listing-page-main-container {
+    .date-cell {
+      width: 14%;
+    }
+
+    .vehicle-cell {
+      width: 12%;
+    }
+
+    .part-cell {
+      width: 17%;
+    }
+
+    .result-cell {
+      width: 10%;
+    }
+
+    .price-cell {
+      width: 14%;
+    }
+
+    .status-cell {
+      width: 21%;
+    }
+
+    .date-cell {
+      width: 11%;
+    }
+  }
+}
+
+@media screen and (min-width: 1051px) {
+  .order-listing-page-main-container {
+    .date-cell {
+      width: 11%;
+    }
+
+    .vehicle-cell {
+      width: 17%;
+    }
+
+    .part-cell {
+      width: 19%;
+    }
+
+    .result-cell {
+      width: 7%;
+    }
+
+    .price-cell {
+      width: 11%;
+    }
+
+    .status-cell {
+      width: 17%;
+    }
+
+    .date-cell {
+      width: 17%;
+    }
+  }
+}
+
+@media screen and (max-width: 965px) {
+
+  .input-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .input-fields {
+    width: 100%;
+  }
+
+  .outer-container {
+    flex-direction: column;
+  }
+
+  .search-container {
+    margin: 0px auto;
+  }
+
+  .parts-checker-container {
+    padding: 40px 20px;
+  }
+
+  .input-area {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .text-indication {
+    margin-top: 22px !important;
+  }
+}
+
+.pt-14 {
+  padding-top: 14px !important;
+}
+
+.parts-checker-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.logout-button {
+  background: red;
+  border-radius: 6px;
+  color: white;
+  height: 30px;
+  line-height: 18px;
+  padding: 5px 25px;
+  width: max-content;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  clear: both;
+  border: 1px solid red;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+  }
+}
+
+.client-name {
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #636363;
+}

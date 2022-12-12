@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+.navbar-fixed-top {
+  margin-left: 160px;
+  width: 80%;
+}
+
 .red_label {
   width: 4px;
   height: 4px;
@@ -34,7 +39,7 @@
   font-size: 12px;
 }
 
-.top_border {
-  border-top: 1px solid #e4e4e4;
-  width: 107%;
-}
+// .top_border {
+//   border-top: 1px solid #e4e4e4;
+//   // width: 107%;
+// }

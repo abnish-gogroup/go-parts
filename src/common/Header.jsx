@@ -30,8 +30,8 @@ function Header() {
         </div>
       </nav>
       {/* {showNotifications ? <NotificationsCart setShowNotifications={setShowNotifications} /> : ''} */}
-      <div className='top_border'>
-      </div>
+      {/* <div className='top_border'>
+      </div> */}
     </div>
   )
 }
