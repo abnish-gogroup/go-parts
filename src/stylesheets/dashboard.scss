@@ -1,14 +1,15 @@
 .main_dashboard_container {
-  background-color: #E5E5E5;
+  background-color: #F1F5F8;
   width: auto;
-  margin-left: 200px;
   padding: 30px;
+  padding-left: 200px;
 }
 
 .dashboard_text_cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 10px;
 }
 
 .fs_30 {

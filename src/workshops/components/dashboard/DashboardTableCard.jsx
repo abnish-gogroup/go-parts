@@ -3,30 +3,32 @@ import '../../../stylesheets/dashboardDropdown.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faPaperclip, faBars } from '@fortawesome/free-solid-svg-icons';
 
-function DropdownCard(props) {
-  const { jobId, partName, model, numberPlate, noOfParts, completionDate} = props;
+function DashboardTableCard(props) {
+  const { jobId, jobs, model, licencePlateId, completionDate, noOfParts } = props;
   return (
     <div className='row row_class'>
-      <div className='col-1'>
+      <div className='w_5'>
+      </div>
+      <div className='w_7'>
         {jobId}
       </div>
-      <div className='col-4'>
-        {partName}
+      <div className='w_25'>
+        {jobs}
       </div>
-      <div className='col-2'>
+      <div className='w_17'>
         {model}
       </div>
-      <div className='col-2'>
-        {numberPlate}
+      <div className='w_14'>
+        {licencePlateId}
       </div>
-      <div className='col-1'>
+      <div className='w_15'>
         {noOfParts}
       </div>
-      <div className='col-2'>
+      <div className='w_15'>
         {completionDate}
       </div>
     </div>
   )
 }
 
-export default DropdownCard;
+export default DashboardTableCard;
