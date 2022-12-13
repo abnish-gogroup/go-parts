@@ -9,6 +9,7 @@ import Sidebar from '../../common/Sidebar';
 import ThankYouOrder from '../components/thankYou/ThankYouOrder';
 import Checkout from '../components/checkout/Checkout';
 import OrderOverview from '../components/orderOverview/OrderOverview';
+import PartsSelection from '../components/partsSelection/PartsSelection';
 
 export default function RouterPath() {
   const location = window.location.pathname;
@@ -33,6 +34,9 @@ export default function RouterPath() {
         </Route>
         <Route path='/order-overview'>
           <OrderOverview />
+        </Route>
+        <Route path='/parts-selection'>
+          <PartsSelection />
         </Route>
         {/* <Route path='/oe-readout'>
             <OePaperReadout />
