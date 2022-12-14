@@ -1,11 +1,9 @@
 import React from 'react';
 import '../../../stylesheets/dashboard.scss';
 import Tabs from './Tabs';
-import {tabContent} from '../../constants/tabContent';
+import { tabContent } from '../../constants/tabContent';
 
 function Dashboard() {
-
-  
 
   const handleCreateANewOrder = () => {
     window.history.pushState({}, '', './create-a-job');
@@ -38,13 +36,10 @@ function Dashboard() {
           <div className="complain_count pdt_10">1</div>
         </div>
       </div>
-
       {/* navbar container  */}
-
       <div className='container'>
         <Tabs tabs={tabContent} />
       </div>
-
     </div>
   )
 }

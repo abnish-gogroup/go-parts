@@ -5,7 +5,7 @@ export default function Tab(props) {
  
   return (
     <div>
-      <h3>{props.tab.title}</h3>
+      {/* <h3>{props.tab.title}</h3> */}
       {/* <p>{props.tab.text}</p> */}
       <DashboardTable 
          jobId= '44592'

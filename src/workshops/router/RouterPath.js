@@ -10,6 +10,8 @@ import ThankYouOrder from '../components/thankYou/ThankYouOrder';
 import Checkout from '../components/checkout/Checkout';
 import OrderOverview from '../components/orderOverview/OrderOverview';
 import PartsSelection from '../components/partsSelection/PartsSelection';
+import UploadPartsFile from '../components/uploadFiles/UploadPartsFile';
+import PartsChecker from '../components/uploadFiles/PartsChecker';
 
 export default function RouterPath() {
   const location = window.location.pathname;
@@ -37,6 +39,12 @@ export default function RouterPath() {
         </Route>
         <Route path='/parts-selection'>
           <PartsSelection />
+        </Route>
+        <Route path='/upload-files'>
+          <UploadPartsFile />
+        </Route>
+        <Route path='/parts-checker'>
+          <PartsChecker />
         </Route>
         {/* <Route path='/oe-readout'>
             <OePaperReadout />

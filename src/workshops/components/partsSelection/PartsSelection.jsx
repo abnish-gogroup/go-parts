@@ -33,11 +33,16 @@ function PartsSelection(){
     setShowProfileDD(true);
   }
 
+  const goToCheckoutPage =()=>{
+    window.history.pushState({}, '', '/checkout');
+    window.location.reload();
+  }
+
   return (
     <div className="main_parts_selection_cont">
   <div className="parts_selection_text_cont">
     <div className="parts_selection_text fs_30">Angebotsauswahl</div>
-    <button className="parts_order_btn">Bestellen</button>
+    <button className="parts_order_btn" onClick={goToCheckoutPage}>Bestellen</button>
   </div>
   <div className="parts_selection_desc">
     <div className="parts_selection_desc_text">Front Schaden - Auffahrunfall</div>
@@ -49,7 +54,8 @@ function PartsSelection(){
       </div>
       <div className="parts_selection_date">
       <div className='fw_400'>Start Datum: <span className="start_date">29.09.2022</span></div>
-      <div className='fw_400'>Fertigstellung:: <span className="end_date">14.10.2022</span></div>
+      <div className='fw_400'>Fertigstellung: <span className="end_date">14.10.2022</span></div>
+      <div className='fw_400'>Auftragsnummer: <span className="order_input_value">1234</span></div>
     </div>
     <img src="http://static-assets-goparts.s3.amazonaws.com/static-images/Parts%20Selection/add-a-photo.png" className="placeholder_img" />
     </div>

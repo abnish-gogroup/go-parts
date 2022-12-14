@@ -280,10 +280,26 @@
 .react-datepicker-wrapper {
   width: 45% !important;
   margin-left: 10px !important;
+  position: relative;
+  border: none;
+}
+
+.calendar_style {
+  position: absolute;
+  margin-left: 14%;
+  color: #8692a6;
 }
 
 .date_class {
-  border-radius: 5px !important;
+  border-radius: 3px !important;
+  border: 1px solid #8692a6 !important;
+}
+
+.dfx_supp {
+  display: flex;
+  padding-bottom: 5px;
+  align-items: center;
+
 }
 
 .checkout_top_cont {

@@ -4,8 +4,10 @@ import DatePicker from 'react-datepicker';
 import { addDays, subDays } from 'date-fns';
 import 'react-datepicker/dist/react-datepicker.css';
 import SupplierDetailsCard from './SupplierDetailsCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
-function SupplierDetails(props) {
+function SupplierDetails2(props) {
   const { supplierName, supplierAddress, supplierEmail, radioBtnName, radioBtnTime } = props;
   const [startDate, setStartDate] = useState(null);
   return (
@@ -26,9 +28,9 @@ function SupplierDetails(props) {
               Lieferung
             </div>
             <div className="pt_10">
-              <div className='fs_12'>
+              <div className='fs_12 dfx_supp'>
                 <input name={radioBtnName} type="radio" defaultChecked className='mr_5' />
-                <label>ASAP</label>
+                <label>Schnellstmöglich</label>
               </div>
               <div className="delivery_on fs_12">
                 <input name={radioBtnName} type="radio" className='mr_5' />
@@ -40,10 +42,11 @@ function SupplierDetails(props) {
                   includeDateIntervals={[
                     { start: subDays(new Date(), 0), end: addDays(new Date(), 500) },
                   ]}
-                  placeholderText='Select date'
+                  placeholderText='21 Dez.'
                 />
+                <FontAwesomeIcon icon={faCalendar} className='calendar_style' />
                 {/* <input type="date" className="date" /> */}
-                <span className="time_format">
+                {/* <span className="time_format">
                   <div>
                     <input name={radioBtnTime} type="radio" defaultChecked className='mr_5' />
                     <label>a.m</label>
@@ -51,7 +54,7 @@ function SupplierDetails(props) {
                   <div>
                     <input name={radioBtnTime} type="radio" className='mr_5' /><label>p.m</label>
                   </div>
-                </span>
+                </span> */}
               </div>
               <input name={radioBtnName} type="radio" className='mr_5 fs_12' /><label className='fs_12'>Refer to delivery instructions</label>
               <input type='text' className="delivery_inst mrg_left" />
@@ -70,29 +73,37 @@ function SupplierDetails(props) {
             <div className="cell_mfg bg_tran">Hersteller</div>
             <div className="cell_desc bg_tran">Beschreibung</div>
             <div className="cell_10 bg_tran">Teile-TYPE</div>
-            <div className="cell_10 bg_tran">Lieferung</div>
             <div className="cell_8 bg_tran">Anzahl</div>
             <div className="cell_10 bg_tran">Marge %</div>
             <div className="cell_15 bg_tran">Liefer-Preis</div>
             <div className="cell_del_price bg_tran">Preis</div>
           </div>
+          
+          <SupplierDetailsCard 
+            partNumber='6Y0853668B'
+            manufacturer='Skoda'
+            description='Gitter Motorhaube'
+            partType='OEM'
+            number= '1'
+            margin='24%'
+            deliveryPrice='€0'
+            price='€24.70'
+          />
 
-          <SupplierDetailsCard />
-          <div className="table_data d_flex pad_10 fs_12">
-            <div className="cell_part bg_tran col_grey">1001</div>
-            <div className="cell_mfg bg_tran col_grey">VW</div>
-            <div className="cell_desc bg_tran col_grey">Stoßstange Vorne</div>
-            <div className="cell_10 bg_tran col_grey">OEM</div>
-            <div className="cell_10 bg_tran col_grey">2 days</div>
-            <div className="cell_8 bg_tran">1</div>
-            <div className="cell_10 bg_tran">5%</div>
-            <div className="cell_15 bg_tran">€5</div>
-            <div className="cell_del_price bg_tran">€100</div>
-          </div>
+          <SupplierDetailsCard 
+            partNumber='1U0853621CMEL'
+            manufacturer='Skoda'
+            description='Emblem'
+            partType='OEM'
+            number= '1'
+            margin='15%'
+            deliveryPrice='€0'
+            price='€10.41'
+          />
         </div>
       </div>
     </div>
   )
 }
 
-export default SupplierDetails;
+export default SupplierDetails2;

@@ -153,11 +153,11 @@ ul.accordion-list-jobs {
 
     &.active {
       .angle_down_ico {
-        transform: rotate(180deg);
+        transform: rotate(-180deg);
       }
     }
 
-    div.answer1 {
+    div.answerDD {
       position: relative;
       display: block;
       width: 103%;
