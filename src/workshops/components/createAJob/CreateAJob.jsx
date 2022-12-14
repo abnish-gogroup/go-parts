@@ -12,6 +12,11 @@ function CreateAJob() {
     window.location.reload();
   }
 
+  const goToUploadPartsChecker=()=>{
+    window.history.pushState({}, '', '/upload-files');
+    window.location.reload();
+  }
+
   const handleDeliveryChange = () => {
     setIsAltAddress(!isAltAddress);
   }
@@ -22,7 +27,7 @@ function CreateAJob() {
     <div className='create_a_job_cont'>
       <div className="job_title">
         <div className='title_text'>Create a New Job</div>
-        <button className='upload_btn'>Gutachten hochladen</button>
+        <button className='upload_btn' onClick={goToUploadPartsChecker}>Gutachten hochladen</button>
       </div>
       <div className="create_job_section">
         <form className='row g-3 mb-5 customer_form'>
