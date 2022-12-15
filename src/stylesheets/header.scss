@@ -5,6 +5,14 @@
   margin-left: 54px;
 }
 
+.pd_3 {
+  padding: 3px !important;
+}
+
+.translate-middle {
+  transform: translate(-100%, 30%) !important;
+}
+
 .right_navbar {
   display: flex;
   justify-content: space-around;
@@ -16,17 +24,9 @@
   width: 80%;
 }
 
-.red_label {
-  width: 4px;
-  height: 4px;
-  background-color: #f32727;
-  // position: absolute;
-  border-radius: 50%;
-}
-
 .profile_class {
   border: none;
-  margin: 0 15px 0 24px;
+  margin: 0 10px 0 20px;
   cursor: pointer;
   font-size: 12px;
 }

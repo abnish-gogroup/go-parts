@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faDashboard, faGear, faList, faBell } from '@fortawesome/free-solid-svg-icons';
 import Header from '../common/Header';
 
-function Sidebar() {
-	const [expanded, setExpanded] = useState(true);
+function Sidebar(props) {
+	const { expanded, handleToggleSidebar } = props;
 
 	const goToDashboard = () => {
 		window.history.pushState({}, '', '/all-jobs');
@@ -30,11 +30,11 @@ function Sidebar() {
 
 	return (
 		<div>
-			<Header />
+			<Header /> 
 			<div className={expanded ? 'main_side_bar' : 'w_50'} id='main_side_bar'>
 				<nav className='navbar navbar-default' role='navigation'>
 					<div className='navbar-header'>
-						<FontAwesomeIcon icon={faBars} className="icon" id='collapse_expand_btn' onClick={() => setExpanded(!expanded)} />
+						<FontAwesomeIcon icon={faBars} className="icon" id='collapse_expand_btn' onClick={handleToggleSidebar} />
 					</div>
 					<div className='side-menu-container'>
 						<ul className='nav navbar-nav'>

@@ -1,7 +1,7 @@
 import React from "react";
 // import * as siteConstants from "../../constants/SiteConstants"
 // import classnames from "classnames";
-// import { getParameterByName, pushUrlToState } from "../../helpers/Utils";
+import { getParameterByName, pushUrlToState } from '../../helper/Utils';
 
 // import "../../../../assets/stylesheets/dashboard/partsChecker.scss";
 function RecentTable(props) {

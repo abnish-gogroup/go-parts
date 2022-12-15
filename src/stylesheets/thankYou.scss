@@ -6,6 +6,8 @@
   background-color: #E6ECF1;
   width: auto;
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .disp_flex {
@@ -20,12 +22,8 @@
 
 .thank_you_card {
   width: auto;
-  height: auto;
+  height: 600px;
   padding: 20px 40px;
-  position: absolute;
-  left: 56%;
-  top: 54%;
-  transform: translate(-50%, -50%);
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 0 #adb5bd, 0 1px 1px 1px #adb5bd;

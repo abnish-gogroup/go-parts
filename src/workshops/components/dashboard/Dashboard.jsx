@@ -3,15 +3,17 @@ import '../../../stylesheets/dashboard.scss';
 import Tabs from './Tabs';
 import { tabContent } from '../../constants/tabContent';
 
-function Dashboard() {
-
+function Dashboard(props) {
+  const { expanded } = props;
   const handleCreateANewOrder = () => {
     window.history.pushState({}, '', './create-a-job');
     window.location.reload();
   }
 
-  return (
-    <div className="main_dashboard_container">
+  console.log("expanded", expanded);
+
+  return ( 
+    <div className={expanded ? "main_dashboard_container pd_240" : 'main_dashboard_container pd_140'}>
       <div className="dashboard_text_cont">
         <div className="dashboard_text fs_30">
           Dashboard

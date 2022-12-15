@@ -32,33 +32,33 @@ function Login() {
         <span className='theme_clr fs_30 ls_1'>Werkstätten</span>
       </div>
       <div className='sign_in_cont fs_30 mart_50'>
-        <div className='signin_txt cb_262626'>Sign In</div>
+        <div className='signin_txt cb_262626'>Anmelden</div>
         <small className='signin_desc'>
-          For the purpose of ordering car parts, your details are required
+        Für die Bestellung von Autoteilen werden Ihre Log-in Daten benötigt
         </small>
       </div>
       <div className='login_cont'>
         <form className='registration_form cb_262626 fs_14'>
           <div className='dreg_flex'>
-            <label className='form_label fs_16 fw_500'>Email Address</label>
-            <input className='input_box' placeholder='Enter Email Address' />
+            <label className='form_label fs_16 fw_500'>Email Addresse</label>
+            <input className='input_box' />
           </div>
           <div className='dreg_flex fs_16 fw_500'>
-            <label className='form_label'>Password</label>
-            <input className='input_box' placeholder='Enter Password' />
+            <label className='form_label'>Passwort</label>
+            <input className='input_box' />
           </div>
           <small
             className='forgot_password cp fs_12 theme_clr'
           // onClick={goToForgotPassword}
           >
-            Forgot Password?
+            Passwort vergessen?
           </small>
           <div className='mt-1'>
             <button
               className='btn btn-primary cp'
               onClick={(e) => handleSignin(e)}
             >
-              Sign In
+              Anmelden
             </button>
           </div>
         </form>
@@ -71,14 +71,14 @@ function Login() {
             className='google_logo'
             alt='google_logo'
           />
-          <span>Login with Google</span>
+          <span>Melde dich an mit Google</span>
         </button>
         <div className='new_user pdb_50'>
-          <span className='mr_10'>New to GoParts Insurance?</span>
+          <span className='mr_10'>Neu bei Goparts?</span>
           <span className='cp theme_clr'
           // onClick={goToRegistrationPage}
           >
-            Create an account?
+            Registriere deinen Account
           </span>
         </div>
       </div>

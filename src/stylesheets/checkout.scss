@@ -2,8 +2,8 @@
   background-color: #F1F5F8;
   font-size: 12px;
   width: auto;
-  padding: 20px;
-  padding-left: 180px;
+  height: 180vh;
+  margin-bottom: 10px;
 }
 
 .checkout_section {
@@ -94,7 +94,7 @@
 }
 
 .supplier_cont {
-  margin: 20px 0 0 60px;
+  // margin: 20px 0 0 60px;
 }
 
 .supplier_card {
@@ -306,7 +306,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
+  padding-bottom: 40px;
 }
 
 .checkout_txt {
@@ -351,7 +351,7 @@
   border-radius: 5px;
   background-color: #fff;
   display: flex;
-  margin: 20px 0 20px 60px;
+  margin: 20px 0;
   justify-content: space-around;
   align-items: center;
   padding: 6px 12px;
@@ -373,5 +373,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0 20px 60px;
+  // margin: 10px 0 20px 60px;
 }

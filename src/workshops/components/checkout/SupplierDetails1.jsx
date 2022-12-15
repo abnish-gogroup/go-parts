@@ -42,7 +42,7 @@ function SupplierDetails1(props) {
                   includeDateIntervals={[
                     { start: subDays(new Date(), 0), end: addDays(new Date(), 500) },
                   ]}
-                  placeholderText='21 Dez.'
+                  placeholderText='Select Date'
                 />
                 <FontAwesomeIcon icon={faCalendar} className='calendar_style' />
                 {/* <input type="date" className="date" /> */}

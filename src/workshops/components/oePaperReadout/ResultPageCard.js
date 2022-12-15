@@ -1,8 +1,8 @@
 // import React from 'react';
 
-// import '../../stylesheets/resultPageCard.scss';
+// import '../../../stylesheets/resultPageCard.scss';
 
-// // import { openCalendlyView } from '../../helpers/Utils'
+// // import { openCalendlyView } from '../../helper/Utils';
 
 // function ResultPageCard(props) {
 

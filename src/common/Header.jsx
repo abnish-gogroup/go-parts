@@ -19,8 +19,13 @@ function Header() {
         <div className='top_navbar'>
           <img src='https://d3brnpc5nhvc9v.cloudfront.net/site/static-images/goparts-logo.png' className='logo' />
         </div>
-        <div className='right_navbar'>
-          <FontAwesomeIcon icon={faBell} onClick={handleShow}><span className='red_label'></span></FontAwesomeIcon>
+        <div className='right_navbar'> 
+        <div className="position-relative">
+        <FontAwesomeIcon icon={faBell} />
+          <span className="position-absolute translate-middle pd_3 bg-danger border-light rounded-circle">
+          </span>
+        </div>
+          {/* <FontAwesomeIcon icon={faBell} onClick={handleShow}><span className='red_label'></span></FontAwesomeIcon> */}
           <span className='profile_class'>Welcome Tom</span>
           <select className='logout'>
             <option value='welcome'>Log out</option>

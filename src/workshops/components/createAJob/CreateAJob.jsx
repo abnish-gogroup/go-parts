@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 
-function CreateAJob() {
+function CreateAJob(props) {
+  const { expanded } = props;
   const [isAltAddress, setIsAltAddress] = useState(false);
   const goToJobSearchPage = () => {
     window.history.pushState({}, '', '/checkout');
@@ -24,85 +25,85 @@ function CreateAJob() {
   console.log("isalte", isAltAddress)
 
   return (
-    <div className='create_a_job_cont'>
+    <div className={ expanded ? 'create_a_job_cont pd_240' : 'create_a_job_cont pd_140'}>
       <div className="job_title">
-        <div className='title_text'>Create a New Job</div>
+        <div className='title_text'>Neuen Auftrag erstellen</div>
         <button className='upload_btn' onClick={goToUploadPartsChecker}>Gutachten hochladen</button>
       </div>
       <div className="create_job_section">
         <form className='row g-3 mb-5 customer_form'>
           <div className='col-12'>
-            <label className='form-label'>Job Title</label>
-            <input className='form-control' placeholder='Title' />
+            <label className='form-label'>Auftragsnummer</label>
+            <input className='form-control' placeholder='46820492' />
           </div>
           <div className='col-12'>
-            <label className='form-label'>Customer Name</label>
-            <input className='form-control' placeholder='Jon Doe' />
+            <label className='form-label'>Kunden Name</label>
+            <input className='form-control' placeholder='Max Mustermann' />
           </div>
           <div className='col-6'>
-            <label className='form-label'>Brand</label>
-            <input className='form-control' placeholder='Ford' />
+            <label className='form-label'>Marke</label>
+            <input className='form-control' placeholder='VW' />
           </div>
           <div className='col-6'>
             <label className='form-label'>Model</label>
-            <input className='form-control' placeholder='Focus' />
+            <input className='form-control' placeholder='Golf' />
           </div>
           <div className='col-6'>
-            <label className='form-label'>VIN</label>
-            <input className='form-control' placeholder='4Y1SL65848Z411439' />
+            <label className='form-label'>FIN</label>
+            <input className='form-control' placeholder='WDX03194G4921' />
           </div>
           <div className='col-6'>
-            <label className='form-label'>Plate Number</label>
-            <input type='email' className='form-control' placeholder='SEA 234' />
+            <label className='form-label'>Nummernschild</label>
+            <input type='email' className='form-control' placeholder='A-BC 1234' />
           </div>
 
           <div>
-            <span>Insurance Coverage</span><br></br>
+            <span>Versicherungsfall</span><br></br>
             {/* <div className='radio_item'> */}
             <input type='radio' value='Yes' name='insurance' className='radio_class_i' defaultChecked />
-            <label className='radio_label_class'>Yes</label>
+            <label className='radio_label_class'>Ja</label>
             <input type='radio' value='No' name='insurance' className='radio_class_i' />
-            <label className='radio_label_class'>No</label>
+            <label className='radio_label_class'>Nein</label>
             {/* </div> */}
           </div>
 
           <div className='col-6'>
-            <label className='form-label'>Claim Number</label>
-            <input className='form-control' placeholder='222633' />
+            <label className='form-label'>Versicherungsnummer</label>
+            <input className='form-control' placeholder='4829412' />
           </div>
           <div className='col-6'>
-            <label className='form-label'>Insurance Name</label>
-            <input className='form-control' placeholder='Insurance Name' />
+            <label className='form-label'>Name der Versicherung</label>
+            <input className='form-control' placeholder='HUK-COBURG' />
           </div>
 
           <div>
-            <span>Fleet case</span><br></br>
-            <input type='radio' value='Yes' name='fleet' className='radio_class_i' defaultChecked />
-            <label className='radio_label_class'>Yes</label>
-            <input type='radio' value='No' name='fleet' className='radio_class_i' />
-            <label className='radio_label_class'>No</label>
+            <span>Flotten Fall</span><br></br>
+            <input type='radio' value='Yes' name='fleet' className='radio_class_i' />
+            <label className='radio_label_class'>Ja</label>
+            <input type='radio' value='No' name='fleet' className='radio_class_i' defaultChecked />
+            <label className='radio_label_class'>Nein</label>
           </div>
 
           <div className='col-6'>
-            <label className='form-label'>Fleet Company Name</label>
-            <input className='form-control' placeholder='Fleet Company Name' />
+            <label className='form-label'>Name der Flotte</label>
+            <input className='form-control' placeholder='Name' />
           </div><br></br>
           <div className='col-6'>
 
           </div>
           <div className='col-6'>
-            <label className='form-label'><FontAwesomeIcon icon={faCalendar} /> Start Date</label>
+            <label className='form-label'><FontAwesomeIcon icon={faCalendar} /> Start Datum</label>
             <input className='form-control' type='text' placeholder='March, 3' /></div>
           <div className='col-6'>
-            <label className='form-label'><FontAwesomeIcon icon={faCalendar} />Completion Date</label>
+            <label className='form-label'><FontAwesomeIcon icon={faCalendar} />Geplante Fertigstellung</label>
             <input className='form-control' type='text' placeholder='March, 25' />
           </div>
-          <span>Delivery Address</span><br></br>
+          <span>Lieferadresse</span><br></br>
           <div onChange={handleDeliveryChange}>
             <input type='radio' value='default' name='address' className='radio_class_i' defaultChecked />
-            <label className='radio_label_class'>Default</label>
+            <label className='radio_label_class'>Standard</label>
             <input type='radio' value='alternative_addr' name='address' className='radio_class_i' />
-            <label className='radio_label_class'>Use Alternative Delivery Address</label>
+            <label className='radio_label_class'>Alternative Lieferadresse</label>
           </div>
           {isAltAddress ? <textarea /> : ''}
         </form>

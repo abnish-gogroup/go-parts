@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 import '../../../stylesheets/partsChecker.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { faFile, faUpload, faCloudArrowUp } from '@fortawesome/free-solid-svg-icons';
 import PartsResultTable from './PartsResultTable';
 
-function PartsChecker() { 
+function PartsChecker(props) { 
+  const { expanded } = props;
   const [showResultTable, setShowResultTable] = useState(false);
-  const handleCheckAllParts=()=>{
+
+  const handleCheckAllParts=async()=>{
     setShowResultTable(!showResultTable);
+
+    
     // window.history.pushState({}, '', '/parts-checker');
     // window.location.reload();
   }
 
   return (
-    <div className="parts_checker_result_cont">
+    <div className={ expanded ? "parts_checker_result_cont pd_240" : "parts_checker_result_cont pd_140" }>
       <div className="parts_checker_text fs_30"> Parts Checker</div>
       <div className="parts_checker_card">
         <div className="parts_name fw_600 ls_7">Frontschaden - Stosßfänger vorne</div>
@@ -28,6 +32,13 @@ function PartsChecker() {
             <div className='fs_12'>Fertigstellung: <span className="end_date_c">14.10.2022</span></div>
             <div className='fs_12'>Auftragsnummer: <input className='order_input' /></div>
           </div>
+          <div className='mrgl_30'>
+          <div className="box-fileupload mr_10 cp">
+                <input type="file" id="fileId" className="file-upload-input cp" name="files" multiple />
+                <label htmlFor="fileId" className="file-upload-btn cp"><FontAwesomeIcon icon={faCloudArrowUp}  /></label>
+            </div>
+          </div>
+            <div className='fs_12'>Upload an image</div>
         </div>
         <div className="file_readable_data">
           <div className="file_name fs_14"><FontAwesomeIcon icon={faFile} className='pdr_10' />estimate.pdf</div>
@@ -43,7 +54,7 @@ function PartsChecker() {
         </div>
       </div>
       { showResultTable ? '' : 
-      <div className='tar mrgrt'><button className='check_all_parts' onClick={handleCheckAllParts}>Alle Teile überprüfen</button></div>}
+      <div className='tar mrt_40'><button className='check_all_parts' onClick={handleCheckAllParts}>Alle Teile überprüfen</button></div>}
        { showResultTable ? <PartsResultTable /> : '' } 
     </div>
   )

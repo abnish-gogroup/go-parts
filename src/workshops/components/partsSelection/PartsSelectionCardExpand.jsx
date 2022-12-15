@@ -16,8 +16,9 @@ function PartsSelectionCardExpand(props) {
       $('.showChooseText4').hide();
       $('.showChooseText5').hide();
   
-      $("input[name=parts_selection]:radio").on('click', function () {
+      $("input[name=parts_selection]:radio").on('click', function (e) {
           if ($('input[name=parts_selection]:checked').val() === "rd_1") {
+            e.stopPropagation();
             $('.showChooseText1').show();
             $('.showChooseText2').hide();
             $('.showChooseText3').hide();
@@ -25,6 +26,7 @@ function PartsSelectionCardExpand(props) {
             $('.showChooseText5').hide();
   
           } else if ($('input[name=parts_selection]:checked').val() === "rd_2") {
+            e.stopPropagation();
             $('.showChooseText1').hide();
             $('.showChooseText2').show();
             $('.showChooseText3').hide();
@@ -32,6 +34,7 @@ function PartsSelectionCardExpand(props) {
             $('.showChooseText5').hide();
           }
           else if ($('input[name=parts_selection]:checked').val() === "rd_3") {
+            e.stopPropagation();
             $('.showChooseText1').hide();
             $('.showChooseText2').hide();
             $('.showChooseText3').show();
@@ -39,6 +42,7 @@ function PartsSelectionCardExpand(props) {
             $('.showChooseText5').hide();
           }
           else if ($('input[name=parts_selection]:checked').val() === "rd_4") {
+            e.stopPropagation();
             $('.showChooseText1').hide();
             $('.showChooseText2').hide();
             $('.showChooseText3').hide();
@@ -46,6 +50,7 @@ function PartsSelectionCardExpand(props) {
             $('.showChooseText5').hide();
           }
           else if ($('input[name=parts_selection]:checked').val() === "rd_5") {
+            e.stopPropagation();
             $('.showChooseText1').hide();
             $('.showChooseText2').hide();
             $('.showChooseText3').hide();

@@ -3,8 +3,8 @@ import '../../../stylesheets/thankYou.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
-function ThankYouOrder() {
-
+function ThankYouOrder(props) {
+  const {expanded} = props;
   const goToOrderOverview = () => {
     window.history.pushState({}, '', './order-overview');
     window.location.reload();
@@ -15,7 +15,7 @@ function ThankYouOrder() {
   // }
 
   return (
-    <div className='main_container_thank_you'>
+    <div className={expanded ? 'main_container_thank_you pd_240': 'main_container_thank_you pd_140'}>
       <div className="thank_you_card">
         <div className="thank_order_text">
           <FontAwesomeIcon icon={faCircleCheck} className='icon_check' />

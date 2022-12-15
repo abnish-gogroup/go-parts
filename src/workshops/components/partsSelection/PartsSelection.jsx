@@ -6,23 +6,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faCheck } from '@fortawesome/free-solid-svg-icons';
 import PartsSelectionCardExpand from './PartsSelectionCardExpand';
 
-function PartsSelection(){
+function PartsSelection(props){
+  const { expanded } = props; 
   const [showProfileDD, setShowProfileDD] = useState(false);
  
   useEffect(() => {
     $(document).ready(function () {
       $('.accordion-list-parts-selection > li > .parts_answer').hide();
-      // $(this).addClass("active").find(".parts_answer").slideDown();
       $('.accordion-list-parts-selection > li').on('click', function () {
-
         if ($(this).hasClass("active")) {
           $(this).removeClass("active").find(".parts_answer").slideUp();
-          console.log('$(this) in if', this);
         } else {
           $(".accordion-list-parts-selection > li.active .parts_answer").slideUp();
           $(".accordion-list-parts-selection > li.active").removeClass("active");
           $(this).addClass("active").find(".parts_answer").slideDown();
-          console.log('$(this) in else', this);
         }
         return false;
       });
@@ -39,7 +36,7 @@ function PartsSelection(){
   }
 
   return (
-    <div className="main_parts_selection_cont">
+    <div className={expanded ? "main_parts_selection_cont pd_240" : "main_parts_selection_cont pd_140"}>
   <div className="parts_selection_text_cont">
     <div className="parts_selection_text fs_30">Angebotsauswahl</div>
     <button className="parts_order_btn" onClick={goToCheckoutPage}>Bestellen</button>
@@ -57,7 +54,7 @@ function PartsSelection(){
       <div className='fw_400'>Fertigstellung: <span className="end_date">14.10.2022</span></div>
       <div className='fw_400'>Auftragsnummer: <span className="order_input_value">1234</span></div>
     </div>
-    <img src="http://static-assets-goparts.s3.amazonaws.com/static-images/Parts%20Selection/add-a-photo.png" className="placeholder_img" />
+    {/* <img src="http://static-assets-goparts.s3.amazonaws.com/static-images/Parts%20Selection/add-a-photo.png" className="placeholder_img" /> */}
     </div>
   </div>
   <div className="part_number_details">
@@ -79,6 +76,7 @@ function PartsSelection(){
               <div className='ddc cp pdl_35'>
               Bester Preis zur gewünschten Lieferung
               </div>
+              <div className='ddc cp pdl_35'>HUK Vorgabe</div>
           </div>
         </div>
     </div>
@@ -143,7 +141,7 @@ function PartsSelection(){
               noOfParts='4'
               completionDate='12/10/2022'
             />
-            <PartsSelectionCard
+            <PartsSelectionCard 
               jobId='24122'
               jobs='Front Schaden - Stoßstange'
               model='Porsche / Macan S'

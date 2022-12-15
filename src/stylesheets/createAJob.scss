@@ -2,46 +2,28 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.fa-bell {
-  margin: 5px 10px;
-  cursor: pointer;
-}
-
 .create_a_job_cont {
-  width: auto;
-  margin-left: 200px;
   background-color: #F1F5F8;
-}
-
-
-.red_label {
-  width: 4px;
-  height: 4px;
-  background-color: #f32727;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.bg_clr {
-  background-color: #f1f5f8;
+  width: auto;
+  height: 200vh;
 }
 
 @mixin act_btn {
   width: auto;
   height: 33px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   color: #fff;
   font-size: 14px !important;
   border: none;
   border-radius: 4px;
+  padding: 5px 20px
 }
 
 .save_btn {
   @include act_btn;
   float: right;
-  margin-right: 100px;
   background-color: #A155B9;
-
+  margin-top: 30px;
   &:hover {
     background-color: #fff;
     color: #A155B9;
@@ -63,15 +45,15 @@ body {
 .create_job_section {
   font-size: 16px;
   color: #262626;
-  margin: 24px 100px 10px 50px;
+  margin-top: 40px;
   position: relative;
   background-color: #fff;
-  padding: 40px;
+  padding: 40px 40px 10px 40px;
   border-radius: 5px;
 }
 
 .job_title {
-  margin: 0px 100px 0 50px;
+  // margin: 0px 100px 0 50px;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -118,6 +100,7 @@ body {
 
 .customer_form {
   margin-top: 30px;
+  width: 66%;
 }
 
 .create_job {

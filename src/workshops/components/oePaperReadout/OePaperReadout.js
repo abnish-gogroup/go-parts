@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-import PartsResultLoader from '../../common/PartsResultsLoader';
+import PartsResultLoader from '../../../common/PartsResultsLoader';
 
-import '../../stylesheets/oePaparReadout.scss';
-import { getParameterByName, pushUrlToState, randomIntFromInterval } from '../helper/Utils';
+import '../../../stylesheets/oePaparReadout.scss';
+import { getParameterByName, pushUrlToState, randomIntFromInterval } from '../../helper/Utils';
 import classnames from "classnames";
 
-import ResultPageCard from "./ResultPageCard";
+// import ResultPageCard from "./ResultPageCard";
 import RecentTable from './RecentTable';
 
-import * as partsCheckerData from '../constants/partsCheckerData';
+import * as partsCheckerData from '../../constants/partsCheckerData';
 
 
 function OePaperReadout(props) {
@@ -300,11 +300,11 @@ function OePaperReadout(props) {
           oeReadOutData.partsList.map((part, partIndex) => {
             return (
               <div className="result-card-outer" key={"fg__part_" + partIndex}>
-                <ResultPageCard
+                {/* <ResultPageCard
                   currentPartData={part}
                   actions={actions}
                   partIndex={partIndex}
-                />
+                /> */}
               </div>
             )
           })}
