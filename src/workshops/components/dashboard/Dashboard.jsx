@@ -5,11 +5,6 @@ import { tabContent } from '../../constants/tabContent';
 
 function Dashboard(props) {
   const { expanded, setExpanded } = props;
-  useEffect(()=>{
-    const expandedvalue = window.localStorage.getItem('expanded');
-    console.log('expandedvalue', expandedvalue);
-    setExpanded(expandedvalue);
-  },[])
   const handleCreateANewOrder = () => {
     window.history.pushState({}, '', './create-a-job');
     window.location.reload();

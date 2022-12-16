@@ -10,11 +10,7 @@ function CreateAJob(props) {
   const [isAltAddress, setIsAltAddress] = useState(false);
 
   useEffect(()=>{
-    console.log('scroll create')
     window.scrollTo(0, 0);
-    const expandedvalue = window.localStorage.getItem('expanded');
-    console.log('expandedvalue', expandedvalue);
-    setExpanded(expandedvalue);
   },[])
 
   const goToJobSearchPage = () => {

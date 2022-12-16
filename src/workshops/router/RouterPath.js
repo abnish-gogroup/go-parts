@@ -17,20 +17,8 @@ export default function RouterPath() {
   const [expanded, setExpanded] = useState(true);
   
   const location = window.location.pathname;
-  useEffect(()=>{
-   const expandedvalue = window.localStorage.getItem('expanded');
-   console.log('expandedvalue', expandedvalue);
-  //  handleToggleSidebar()
-  //  if(expandedvalue){
-  //  setExpanded(true);
-  //  }
-  //  else {
-  //   setExpanded(false);
-  //  }
-  })
   const handleToggleSidebar=()=>{
     setExpanded(!expanded);
-    window.localStorage.setItem('expanded', expanded);
   }
 
 

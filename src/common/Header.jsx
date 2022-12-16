@@ -14,11 +14,16 @@ function Header(props) {
     setShowNotifications(true);
   }
 
+  const handleGoToIndexPage=()=>{
+    window.history.pushState({}, '', '/');
+    window.location.reload();
+  }
+
   return (
     <div>
       <nav className={expanded ? 'navbar navbar-fixed-top' : 'navbar navbar-fixed-top-collapse'}>
         <div className='top_navbar'>
-          <img src='https://d3brnpc5nhvc9v.cloudfront.net/site/static-images/goparts-logo.png' className='logo' />
+          <img src='https://d3brnpc5nhvc9v.cloudfront.net/site/static-images/goparts-logo.png' className='logo' onClick={handleGoToIndexPage} />
           <span className='theme_clr fs_18 ls_1 pdl_10'>Werkstatt</span>
         </div>
         <div className='right_navbar'> 

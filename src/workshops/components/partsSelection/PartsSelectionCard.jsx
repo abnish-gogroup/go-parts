@@ -13,7 +13,7 @@ function PartsSelectionCard(props) {
       $('.showChooseText5').hide();
   
       $("input[name=parts_2_selection]:radio").on('click', function (e) {
-          if ($('input[name=parts_selection]:checked').val() === "rd_4") {
+          if ($('input[name=parts_2_selection]:checked').val() === "rd_4") {
             e.stopPropagation();
             $('.showChooseText4').show();
             $('.showChooseText5').hide();
