@@ -53,7 +53,7 @@ const closeLoaderIn5Seconds = () =>
 
   return (
     <div className={ expanded ? "parts_checker_result_cont pd_240" : "parts_checker_result_cont pd_140" }>
-      <div className="parts_checker_text fs_30"> Parts Checker</div>
+      <div className="parts_checker_text fs_30">PartsChecker</div>
       <div className="parts_checker_card">
         <div className="parts_name fw_600 ls_7">Frontschaden - Stosßfänger vorne</div>
         <div className="parts_c_desc">
@@ -64,7 +64,7 @@ const closeLoaderIn5Seconds = () =>
           </div>
           <div className="parts_c_date">
             <div className='fs_12'>Start Datum: <span className="start_date">19.12.2022</span></div>
-            <div className='fs_12'>Fertigstellung: <span className="end_date_c"></span></div>
+            <div className='fs_12'>Fertigstellung: <span className="end_date_c">25.12.2022</span></div>
             <div className='fs_12'>Auftragsnummer: <input className='order_input' onChange={handleInputChange} value={orderValue} /></div>
           </div>
           <div className='mrgl_30'>

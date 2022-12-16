@@ -9,8 +9,8 @@ export default function SupplierDetailsCard(props) {
       <div className="cell_desc bg_tran">{description}</div>
       <div className="cell_10 bg_tran">{partType}</div>
       <div className="cell_8 bg_tran">{number}</div>
-      <div className="cell_10 bg_tran">{margin}</div>
-      <div className="cell_15 bg_tran">{deliveryPrice}</div>
+      <div className="cell_15 bg_tran">{margin}</div>
+      <div className="cell_10 bg_tran">{deliveryPrice}</div>
       <div className="cell_del_price bg_tran">{price}</div>
     </div>
   )

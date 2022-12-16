@@ -61,6 +61,10 @@
   font-size: 12px;
 }
 
+.fs_13 {
+  font-size: 13px;
+}
+
 .fs_14 {
   font-size: 14px;
 }
@@ -103,15 +107,21 @@
   background-color: #fff;
   font-size: 14px;
   border-top: none;
+  letter-spacing: 0.7px;
 }
 
-.supplier_txt {
-  background: #1E8EA5;
-  padding: 10px;
+.supp_align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E8EA5;
   color: #fff;
-  text-transform: uppercase;
+  padding-right: 20px;
   font-size: 14px;
   font-weight: 600;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 @mixin address_details {
@@ -142,15 +152,15 @@
 }
 
 .w_330 {
-  width: 40%;
+  width: 35%;
 }
 
 .w_350 {
   width: 50%;
 }
 
-.w_40 {
-  width: 40%;
+.w_30 {
+  width: 30%;
 }
 
 .w_20 {

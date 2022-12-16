@@ -37,7 +37,7 @@ function CreateAJob(props) {
     <div className={ expanded ? 'create_a_job_cont pd_240' : 'create_a_job_cont pd_140'}>
       <div className="job_title">
         <div className='title_text'>Neuen Auftrag erstellen</div>
-        <button className='upload_btn' onClick={goToUploadPartsChecker}>Gutachten hochladen</button>
+        <button className='upload_btn' onClick={goToUploadPartsChecker}>Teileliste hochladen</button>
       </div>
       <div className="create_job_section">
         <form className='row g-3 mb-5 customer_form'>
@@ -46,7 +46,7 @@ function CreateAJob(props) {
             <input className='form-control' placeholder='46820492' />
           </div>
           <div className='col-12'>
-            <label className='form-label'>Kunden Name</label>
+            <label className='form-label'>Kundenname</label>
             <input className='form-control' placeholder='Max Mustermann' />
           </div>
           <div className='col-6'>

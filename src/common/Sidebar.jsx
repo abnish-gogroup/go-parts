@@ -25,7 +25,7 @@ function Sidebar(props) {
 
 	return (
 		<div>
-			<Header /> 
+			<Header expanded={expanded} /> 
 			<div className={expanded ? 'main_side_bar' : 'w_50'} id='main_side_bar'>
 				<nav className='navbar navbar-default' role='navigation'>
 					<div className='navbar-header'>

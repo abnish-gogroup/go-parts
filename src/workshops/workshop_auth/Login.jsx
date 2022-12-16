@@ -29,13 +29,11 @@ function Login() {
           src='https://d3brnpc5nhvc9v.cloudfront.net/site/static-images/goparts-logo.png'
           className='logo_size mr_10'
         />
-        <span className='theme_clr fs_30 ls_1'>Werkstätten</span>
+        <span className='theme_clr fs_30 ls_1'>Werkstatt</span>
       </div>
       <div className='sign_in_cont fs_30 mart_50'>
         <div className='signin_txt cb_262626'>Anmelden</div>
-        <small className='signin_desc'>
-        Für die Bestellung von Autoteilen werden Ihre Log-in Daten benötigt
-        </small>
+        <small className='signin_desc'>Für die Bestellung von Autoteilen werden Ihre Log-in Daten benötigt</small>
       </div>
       <div className='login_cont'>
         <form className='registration_form cb_262626 fs_14'>
@@ -63,7 +61,7 @@ function Login() {
           </div>
         </form>
         <div className='l_line'>
-          <small className='orr'>or</small>
+          <small className='orr'>Oder</small>
         </div>
         <button className='google_btn'>
           <img
@@ -74,12 +72,8 @@ function Login() {
           <span>Melde dich an mit Google</span>
         </button>
         <div className='new_user pdb_50'>
-          <span className='mr_10'>Neu bei Goparts?</span>
-          <span className='cp theme_clr'
-          // onClick={goToRegistrationPage}
-          >
-            Registriere deinen Account
-          </span>
+          <span className='mr_3'>Neu bei Goparts?  Registriere deinen</span>
+          <span className='cp theme_clr'>Account</span>
         </div>
       </div>
     </div>

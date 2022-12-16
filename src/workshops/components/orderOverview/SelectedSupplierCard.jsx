@@ -11,9 +11,8 @@ export default function SelectedSupplierCard(props) {
       <div className="cell_10 bg_tran">{delivery}</div>
       <div className="cell_8 bg_tran">{qty}</div>
       <div className="cell_15 bg_tran">{w_margin}</div>
-      <div className="cell_15 bg_tran">{margin}</div>
-      <div className="cell_del_price bg_tran">{deliveryPrice}</div>
-      <div className="cell_del_price bg_tran">{totalPrice}</div>
+      <div className="cell_10 bg_tran">{margin}</div>
+      <div className="cell_15 bg_tran">{deliveryPrice}</div>
     </div>
   )
 }

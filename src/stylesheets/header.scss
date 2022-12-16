@@ -22,6 +22,13 @@
 .navbar-fixed-top {
   margin-left: 160px;
   width: 80%;
+  padding: 10px 0 !important;
+}
+
+.navbar-fixed-top-collapse {
+  margin-left: 10px;
+  width: 90%;
+  padding: 10px 0 !important;
 }
 
 .profile_class {
@@ -37,6 +44,14 @@
   margin: 0 0 0 52px;
   background: transparent;
   font-size: 12px;
+}
+.top_navbar {
+  display: flex;
+  align-items: center;
+}
+
+.fs_18 {
+  font-size: 18px;
 }
 
 // .top_border {

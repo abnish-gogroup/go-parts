@@ -6,7 +6,8 @@ import { faBell } from '@fortawesome/free-solid-svg-icons';
 // import NotificationsCart from '../common/NotificationsCart';
 
 
-function Header() {
+function Header(props) {
+  const { expanded } = props;
   const [showNotifications, setShowNotifications] = useState(false);
 
   const handleShow = () => {
@@ -15,9 +16,10 @@ function Header() {
 
   return (
     <div>
-      <nav className='navbar navbar-fixed-top'>
+      <nav className={expanded ? 'navbar navbar-fixed-top' : 'navbar navbar-fixed-top-collapse'}>
         <div className='top_navbar'>
           <img src='https://d3brnpc5nhvc9v.cloudfront.net/site/static-images/goparts-logo.png' className='logo' />
+          <span className='theme_clr fs_18 ls_1 pdl_10'>Werkstatt</span>
         </div>
         <div className='right_navbar'> 
         <div className="position-relative">
@@ -25,18 +27,14 @@ function Header() {
           <span className="position-absolute translate-middle pd_3 bg-danger border-light rounded-circle">
           </span>
         </div>
-          {/* <FontAwesomeIcon icon={faBell} onClick={handleShow}><span className='red_label'></span></FontAwesomeIcon> */}
-          <span className='profile_class'>Welcome Tom</span>
+          <span className='profile_class'>Wilkommen <span className='fw_600'>Tom</span></span>
           <select className='logout'>
-            <option value='welcome'>Log out</option>
+            <option value='welcome'>Ausloggen</option>
             <option value='profile'>profile</option>
             <option value='setting'>setting</option>
           </select>
         </div>
       </nav>
-      {/* {showNotifications ? <NotificationsCart setShowNotifications={setShowNotifications} /> : ''} */}
-      {/* <div className='top_border'>
-      </div> */}
     </div>
   )
 }

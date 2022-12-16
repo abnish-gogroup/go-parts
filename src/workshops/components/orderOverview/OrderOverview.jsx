@@ -9,8 +9,8 @@ function OrderOverview(props) {
   return (
     <div className={expanded ? 'main_container_checkout pd_240' : 'main_container_checkout pd_140'}>
       <ReportAProblemBox />
-      <SelectedSupplier1 supplierName='EFA Dresden' supplierAddress='Gotthardstrasse 99 Dresden, Sachsen, 01108 02692 76 51 12' supplierEmail='teile@efa-dresdem.de' />
-      <SelectedSupplier2 supplierName='OTS Rodgau' supplierAddress='August Schanz Straße  12 Rodgau, Hessen , 60934 06112 76 51 12' supplierEmail='email@ots.de' />
+      <SelectedSupplier1 supplierId='( ID 1234 A )' supplierName='Nora Zentrum Wolfsburg' supplierAddress='Nora Zentrum Wolfsburg Wolfsburg, Niedersachsen , 38444 05361 204181-0' supplierEmail='lieferung@teileservice.de' />
+      <SelectedSupplier2 supplierId='( ID 1234 B )' supplierName='Brass Teilevertriebs gmBh' supplierAddress='Brass Teilevertriebs GmbH & Co. KG 64293 Darmstadt 06151 108-6' supplierEmail='distrigo@brass-gruppe.de' />
     </div>
   )
 }

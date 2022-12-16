@@ -6,22 +6,22 @@ function ReportAProblemBox() {
     <>
       <div className='order_no_cont'>
         <div className='order_no_text fs_30'>
-          Bestellung # 91210
+          Bestellung # 1234
         </div>
-        <div className='job_item_no fw_400 fs_14'>Job: Frontschaden -Stoßstange<span className='theme_clr'>(ID 301)</span></div>
+        <div className='job_item_no fw_400 fs_14'>Frontschaden - Stossfänger vorne<span className='theme_clr'>(ID 1234)</span></div>
       </div>
       <div className='report_a_prob_cont'>
         <div className='order_from_cont fs_14 fw_600'>
-          <div>Bestellung vom</div>
-          <div className=''>22 Juni</div>
+          <div>Bestellung am</div>
+          <div className=''>19 Dez.</div>
         </div>
         <div className='eta_cont fw_600'>
           <div>ETA</div>
-          <div className=''>24 Juni</div>
+          <div className=''>21 Dez.</div>
         </div>
         <div className='total_price_cont fw_600'>
-          <div>Total Preis</div>
-          <div className=''>€852</div>
+          <div>Gesamt Preis</div>
+          <div className=''>€269.94</div>
         </div>
         <div className='delivery_addr_cont'>
           <div className='fw_600'>Lieferadresse:</div>

@@ -15,8 +15,6 @@ function Dashboard(props) {
     window.location.reload();
   }
 
-  console.log("expanded", expanded);
-
   return ( 
     <div className={expanded ? "main_dashboard_container pd_240" : 'main_dashboard_container pd_140'}>
       <div className="dashboard_text_cont">

@@ -16,7 +16,7 @@ function SupplierDetails1(props) {
         <div className="supplier_txt">{supplierName}</div>
         <div className="address_details_cont">
           <div className="w_330">
-            <div className="col_262626">Contact</div>
+            <div className="col_262626">Kontakt</div>
             <div className="pt_10 fb_1">
               {supplierAddress}
               <br></br>
@@ -34,7 +34,7 @@ function SupplierDetails1(props) {
               </div>
               <div className="delivery_on fs_12">
                 <input name={radioBtnName} type="radio" className='mr_5' />
-                <label>Delivery On</label>
+                <label>Lieferung am</label>
                 <DatePicker
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
@@ -45,24 +45,14 @@ function SupplierDetails1(props) {
                   placeholderText='Select Date'
                 />
                 <FontAwesomeIcon icon={faCalendar} className='calendar_style' />
-                {/* <input type="date" className="date" /> */}
-                {/* <span className="time_format">
-                  <div>
-                    <input name={radioBtnTime} type="radio" defaultChecked className='mr_5' />
-                    <label>a.m</label>
-                  </div>
-                  <div>
-                    <input name={radioBtnTime} type="radio" className='mr_5' /><label>p.m</label>
-                  </div>
-                </span> */}
               </div>
-              <input name={radioBtnName} type="radio" className='mr_5 fs_12' /><label className='fs_12'>Refer to delivery instructions</label>
-              <input type='text' className="delivery_inst mrg_left" />
+              <input name={radioBtnName} type="radio" className='mr_5 fs_12' /><label className='fs_12'>Siehe Lieferanweisungen</label>
+              <input type='text' className="delivery_inst pdl_10 mrg_left" />
             </div>
           </div>
           <div className="col_262626 p_left fs_14">
-            Comment to Supplier(Optional)
-            <input type='text' className="delivery_inst mt_5" />
+              Kommentar an den Lieferanten (optional)
+            <input type='text' className="delivery_inst pdl_10 mt_5" />
           </div>
         </div>
       </div>
@@ -74,8 +64,8 @@ function SupplierDetails1(props) {
             <div className="cell_desc bg_tran">Beschreibung</div>
             <div className="cell_10 bg_tran">Teile-TYPE</div>
             <div className="cell_8 bg_tran">Anzahl</div>
-            <div className="cell_10 bg_tran">Marge %</div>
-            <div className="cell_15 bg_tran">Liefer-Preis</div>
+            <div className="cell_15 bg_tran">UVP Marge Preis</div>
+            <div className="cell_10 bg_tran">Marge</div>
             <div className="cell_del_price bg_tran">Preis</div>
           </div>
           
@@ -85,8 +75,8 @@ function SupplierDetails1(props) {
             description='Stoßstange Vorne'
             partType='OEM'
             number= '1'
-            margin='18%'
-            deliveryPrice='€0'
+            margin='€167.50'
+            deliveryPrice='18%'
             price='€137.35'
           />
 
@@ -96,8 +86,8 @@ function SupplierDetails1(props) {
             description='Blende Gitter Motorhaube'
             partType='OEM'
             number= '1'
-            margin='18%'
-            deliveryPrice='€0'
+            margin='€89.60'
+            deliveryPrice='18%'
             price='€73.47'
           />
 
@@ -107,12 +97,10 @@ function SupplierDetails1(props) {
             description='Rahmen Gitter Motorhaube'
             partType='OEM'
             number= '1'
-            margin='25%'
-            deliveryPrice='€0'
+            margin='31.70'
+            deliveryPrice='25%'
             price='€24.01'
           />
-          
-          
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@ function PartsResultTable(){
       <div className='result_table_body'>
       {partsResultTableData.map((tableData)=>(
          <div className='result_table_row'>
-          <div className='w_25'>{tableData.Vehicle_details}</div>
+          <div className='w_25 fw_600'>{tableData.Vehicle_details}</div>
           <div className='w_10'>{tableData.oe_number}</div>
           <div className='w_20'>{tableData.description}</div>
           <div className='w_7'>{tableData.UVP}</div>

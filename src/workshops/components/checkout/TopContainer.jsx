@@ -9,7 +9,7 @@ function TopContainer(props) {
       </div>
       <div className='price_cont'>
         <div className='checkout_price'>
-          Price<span className='price_value'>€2035</span>
+          Preis: <span className='price_value'>€269.94</span>
         </div>
         <button className='checkout_order_btn fs_14' onClick={props.goToThankYouPage}>Teile Bestellen</button>
       </div>

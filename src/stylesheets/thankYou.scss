@@ -21,8 +21,9 @@
 }
 
 .thank_you_card {
+  margin-top: 4%;
   width: auto;
-  height: 600px;
+  height: 540px;
   padding: 20px 40px;
   background: #fff;
   border-radius: 5px;
@@ -73,7 +74,6 @@
 .supplier_details {
   display: flex;
   flex-direction: column;
-  width: 350px;
 }
 
 .supp_desc {
@@ -82,10 +82,11 @@
   justify-content: space-between;
   padding: 10px 0;
   font-size: 12px;
+  margin-right: 5%;
 }
 
-.w_200 {
-  width: 200px;
+.w_300 {
+  width: 300px;
 }
 
 .flr {

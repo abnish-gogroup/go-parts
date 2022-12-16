@@ -8,32 +8,37 @@ import 'react-datepicker/dist/react-datepicker.css';
 import SelectedSupplierCard from './SelectedSupplierCard';
 
 function SelectedSupplier1(props) {
-  const { supplierName, supplierAddress, supplierEmail, radioBtnName, radioBtnTime } = props;
+  const { supplierId, supplierName, supplierAddress, supplierEmail, radioBtnName, radioBtnTime } = props;
   const [startDate, setStartDate] = useState(null);
   return (
     <div className='supplier_cont'>
       <div className="supplier_card">
-        <div className="supplier_txt">{supplierName}</div>
+        <div className='supp_align'>
+          <div className="supplier_txt">
+          {supplierName}
+          </div>
+          <div>{supplierId}</div>
+        </div>
         <div className="address_details_cont_selected">
           <div className="w_330">
-            <div className="col_262626">Contact</div>
+            <div className="col_262626">Kontakt</div>
             <div className="pt_10 fb_1">
               {supplierAddress}
               <br></br>
               <span className='supp_email'>{supplierEmail}</span>
             </div>
           </div>
-          <div className="w_40">
+          <div className="w_30">
             <div className="col_262626">
-              Lieferung
+            Lieferung
             </div>
             <div className="pt_10">
-              <div>So schnell wie möglich</div>
-              <div><FontAwesomeIcon icon={faCheckDouble} className='theme_clr pdr_10' /> Bestellung vom Lieferanten bestätigt</div>
+              <div>21. Dez.</div>
+              <div><FontAwesomeIcon icon={faCheckDouble} className='theme_clr pdr_10' />Bestellung vom Lieferanten bestätigt</div>
             </div>
           </div>
-          <div className="col_262626 p_left fs_14 w_20">
-            Comment to Supplier(Optional)
+          <div className="col_262626 p_left fs_14 w_30">
+            Kommentar an den Lieferante (Optional)
             <div className='clr_6e7178 fs_14 fw_400'>Vielen Dank im Voraus!</div>
           </div>
         </div>
@@ -47,35 +52,43 @@ function SelectedSupplier1(props) {
             <div className="cell_10 bg_tran">Teile-TYPE</div>
             <div className="cell_10 bg_tran">Lieferung</div>
             <div className="cell_8 bg_tran">Anzahl</div>
-            <div className="cell_15 bg_tran">Werkstatt marge</div>
-            <div className="cell_10 bg_tran">Marge %</div>
-            <div className="cell_15 bg_tran">Liefer-Preis</div>
-            <div className="cell_del_price bg_tran">Preis</div>
+            <div className="cell_15 bg_tran">UVP Marge Preis</div>
+            <div className="cell_10 bg_tran">Marge</div>
+            <div className="cell_15 bg_tran">Preis</div>
           </div>
 
           <SelectedSupplierCard
-            partNo='A2188890225'
-            manufacturer='Mercedes'
-            description='Front Grill'
-            partType='OEM'
-            delivery='2 Tage'
-            qty='1'
-            w_margin='€8'
-            margin='10%'
-            deliveryPrice='€0'
-            totalPrice='€72' />
-
-          <SelectedSupplierCard
-            partNo='A2188800218'
-            manufacturer='Mercedes'
+            partNo='6Y0807221E'
+            manufacturer='Skoda'
             description='Stoßstange Vorne'
             partType='OEM'
             delivery='2 Tage'
             qty='1'
-            w_margin='€30.6'
-            margin='9%'
-            deliveryPrice='€0'
-            totalPrice='€340' />
+            w_margin='€167.50'
+            margin='18%'
+            deliveryPrice='€137.35' />
+
+          <SelectedSupplierCard
+            partNo='6Y0853661 739'
+            manufacturer='Skoda'
+            description='Blende Gitter Motorhaube'
+            partType='OEM'
+            delivery='2 Tage'
+            qty='1'
+            w_margin='€89.60'
+            margin='18%'
+            deliveryPrice='€73.47' />
+
+          <SelectedSupplierCard
+            partNo='6Y0853678GRU'
+            manufacturer='Skoda'
+            description='Rahmen Gitter Motorhaube'
+            partType='OEM'
+            delivery='2 Tage'
+            qty='1'
+            w_margin='€31.70'
+            margin='25%'
+            deliveryPrice='€24.01' />
 
         </div>
       </div>
