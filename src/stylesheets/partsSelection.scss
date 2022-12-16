@@ -1,9 +1,10 @@
 .main_parts_selection_cont {
   background-color: #f1f5f8;
-  height: 200vh;
+  height: 120vh;
 } 
 
 .parts_selection_text_cont {
+  text-transform: capitalize;
   display: flex;
   justify-content: space-between;
   padding: 30px 0 30px 0;
@@ -58,8 +59,13 @@
   padding: 20px;
 }
 
-.model_name, .cust_name {
-  padding-left: 80px;
+.model_name {
+  padding-left: 71px;
+  font-weight: 600;
+}
+
+.cust_name {
+  padding-left: 52px;
   font-weight: 600;
 }
 
@@ -227,4 +233,11 @@ ul.accordion-list-parts-selection {
 
 .dn {
   display: none;
+}
+
+.oe_align_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 0;
 }

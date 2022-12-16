@@ -5,7 +5,8 @@ body {
 .create_a_job_cont {
   background-color: #F1F5F8;
   width: auto;
-  height: 200vh;
+  height: 170vh;
+  text-transform: capitalize;
 }
 
 @mixin act_btn {
@@ -24,6 +25,7 @@ body {
   float: right;
   background-color: #A155B9;
   margin-top: 30px;
+  text-transform: capitalize;
   &:hover {
     background-color: #fff;
     color: #A155B9;
@@ -34,7 +36,7 @@ body {
 .upload_btn {
   @include act_btn;
   background-color: #1E8EA5;
-
+  text-transform: capitalize;
   &:hover {
     background-color: #fff;
     color: #1E8EA5;
@@ -101,6 +103,7 @@ body {
 .customer_form {
   margin-top: 30px;
   width: 66%;
+  text-transform: capitalize;
 }
 
 .create_job {
@@ -148,6 +151,7 @@ body {
   }
 
   .navbar-nav {
+    text-transform: capitalize;
     li {
       display: block;
       width: 100%;

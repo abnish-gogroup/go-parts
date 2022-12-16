@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import '../../../stylesheets/uploadPartsFile.scss';
 import PartsResultLoader from '../../../common/PartsResultsLoader';
+import '../../../stylesheets/Loaders.scss';
+import Loader from '../Loader';
 
 function UploadPartsFile(props){
   const { expanded } = props;
@@ -23,42 +25,16 @@ function UploadPartsFile(props){
   }
 
   const handlePartsChecker=async ()=>{
-    // const file_images = document.getElementById('file_images');
-    // const file_rename_text = document.getElementById('upload_file_text');
-    // file_rename_text.innerText = file_images.files[0].name;
-    // const fileName = file_images.files[0].name;
-    // console.log('filename', fileName);
-    // console.log('fileImage', file_images);
-
-    // let res = fetch("https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAToX0V7ntnoWyOBHI8Cg7IVZaLcGI49WQ",
-    //         {
-    //         method: 'POST',
-    //         body: JSON.stringify({
-    //           requests: [
-    //             {
-    //               image: {content: document.getElementById('file_images').files[0].base64},
-    //               features: [{type: 'TEXT_DETECTION'}],
-    //             },
-    //           ],
-    //         }),
-    //       },
-    //       )
     setShowLoader(true);
-
-    closeLoaderIn5Seconds()
-      // console.log('response', res);
-    window.history.pushState({}, '', '/parts-checker');
-    window.location.reload();
+    closeLoaderIn5Seconds();
   }
 
   const closeLoaderIn5Seconds = () => 
-  console.log('closeloader')
-  setTimeout(() => {
-    // this.props.closeModal();
-    setShowLoader(false);
-  }, 100000);
-
-console.log('sjhowloader', showLoader);
+      setTimeout(() => {
+        window.history.pushState({}, '', '/parts-checker');
+        window.location.reload();
+        setShowLoader(false);
+      }, 5000);
 
   return (
     <div className={expanded ? "upload_part_list_cont pd_240" : "upload_part_list_cont pd_140"}>
@@ -73,11 +49,11 @@ console.log('sjhowloader', showLoader);
         </div>
       </div>
       <div className="tac">
-        <button className="parts_upload_btn cp" type="submit" onClick={handlePartsChecker}>PartsChecker</button>
+        {showLoader ? <div className='loaderCont'><Loader /></div> :
+        <button className="parts_upload_btn cp" type="submit" onClick={handlePartsChecker}>PartsChecker</button>}
         <div className="calculation_text">Laden Sie hier Ihr Gutachten oder die Schadenskalkulation hoch</div>
       </div>
     </div>
-    { showLoader ? <PartsResultLoader /> : ''}
   </div>
   )
 }

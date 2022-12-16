@@ -11,6 +11,9 @@ function PartsSelection(props){
   const [showProfileDD, setShowProfileDD] = useState(false);
  
   useEffect(() => {
+    $(".checkedBox").click(function(e){
+      e.stopPropagation();
+  })
     $(document).ready(function () {
       $('.accordion-list-parts-selection > li > .parts_answer').hide();
       $('.accordion-list-parts-selection > li').on('click', function () {
@@ -25,6 +28,11 @@ function PartsSelection(props){
       });
     });
   }, [])
+
+  // const handleChecked=(e)=>{
+  //   // e.stopPropagation();
+ 
+  // }
 
   const handleHideDD=()=>{
     setShowProfileDD(true);
@@ -60,15 +68,15 @@ function PartsSelection(props){
   <div className="part_number_details">
     <div className="part_no_head">
       <div className='w_5'></div>
-      <div className='w_15'>Teilenummer</div>
-      <div className='w_25'>Beschreibung</div>
+      <div className='w_20'>Teilenummer</div>
+      <div className='w_20'>Beschreibung</div>
       <div className='w_17'>Hersteller</div>
       <div className='w_20'>Vorgeschlagen Durch: </div>
       <div className='dropdown w_17'>
           <div className='dropbtn cp' onClick={handleHideDD}>Günstigster Preis <FontAwesomeIcon icon={faAngleDown} /></div>
           <div className={showProfileDD ? 'dropdown-content' : 'dn'} >
               <div className='ddc cp'>
-              <FontAwesomeIcon icon={faCheck} /><span className='pdl_5'> Günstigster Preis</span>
+              <FontAwesomeIcon icon={faCheck} className='pdl_10' /><span className='pdl_5'> Günstigster Preis</span>
               </div>
               <div className='ddc cp pdl_35'>
               Schnellste Lieferung
@@ -90,8 +98,8 @@ function PartsSelection(props){
                   <FontAwesomeIcon icon={faAngleDown} className='angle_down_ico' />
                 </div>
               </div>
-              <div className='w_15'>6Y0807221E</div>
-              <div className='w_25'>Stoßstange Vorne</div>
+              <div className='w_20'><div className='oe_align_cont'><div>6Y0807221E</div><input type="checkbox" name='oe_1' value='6Y0807221E' className='checkedBox pdr_35' /></div></div>
+              <div className='w_20'>Stoßstange Vorne</div>
               <div className='w_17 pdl_10'>Skoda</div>
               <div className='w_20'></div>
               <div className='w_17'></div>
@@ -125,8 +133,8 @@ function PartsSelection(props){
                   <FontAwesomeIcon icon={faAngleDown} className='angle_down_ico' />
                 </div>
               </div>
-              <div className='w_15'>6Y0853661 739</div>
-              <div className='w_25'>Blende Gitter Motorhaube</div>
+              <div className='w_20'><div className='oe_align_cont'><div>6Y0853661 739</div><input type="checkbox" className='checkedBox pdr_35' /></div></div>
+              <div className='w_20'>Blende Gitter Motorhaube</div>
               <div className='w_17 pdl_10'>Skoda</div>
               <div className='w_20'></div>
               <div className='w_17'></div>
@@ -160,8 +168,8 @@ function PartsSelection(props){
                   <FontAwesomeIcon icon={faAngleDown} className='angle_down_ico' />
                 </div>
               </div>
-              <div className='w_15'>6Y0853668B</div>
-              <div className='w_25'>Gitter Motorhaube</div>
+              <div className='w_20'><div className='oe_align_cont'><div>6Y0853668B</div><input type="checkbox" className='checkedBox pdr_35' /></div></div>
+              <div className='w_20'>Gitter Motorhaube</div>
               <div className='w_17 pdl_10'>Skoda</div>
               <div className='w_20'></div>
               <div className='w_17'></div>
@@ -195,8 +203,8 @@ function PartsSelection(props){
                   <FontAwesomeIcon icon={faAngleDown} className='angle_down_ico' />
                 </div>
               </div>
-              <div className='w_15'>6Y0853678GRU</div>
-              <div className='w_25'>Rahmen Gitter Motorhaube</div>
+              <div className='w_20'><div className='oe_align_cont'><div>6Y0853678GRU</div><input type="checkbox" className='checkedBox pdr_35' /></div></div>
+              <div className='w_20'>Rahmen Gitter Motorhaube</div>
               <div className='w_17 pdl_10'>Skoda</div>
               <div className='w_20'></div>
               <div className='w_17'></div>
@@ -230,8 +238,8 @@ function PartsSelection(props){
                   <FontAwesomeIcon icon={faAngleDown} className='angle_down_ico' />
                 </div>
               </div>
-              <div className='w_15'>1U0853621C MEL</div>
-              <div className='w_25'>Emblem</div>
+              <div className='w_20'><div className='oe_align_cont'><div>1U0853621C MEL</div> <input type="checkbox" className='checkedBox pdr_35' /></div></div>
+              <div className='w_20'>Emblem</div>
               <div className='w_17 pdl_10'>Skoda</div>
               <div className='w_20'></div>
               <div className='w_17'></div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../stylesheets/createAJob.scss';
 import Sidebar from '../../../common/Sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,23 +6,32 @@ import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 
 function CreateAJob(props) {
-  const { expanded } = props;
+  const { expanded, setExpanded } = props;
   const [isAltAddress, setIsAltAddress] = useState(false);
+
+  useEffect(()=>{
+    console.log('scroll create')
+    window.scrollTo(0, 0);
+    const expandedvalue = window.localStorage.getItem('expanded');
+    console.log('expandedvalue', expandedvalue);
+    setExpanded(expandedvalue);
+  },[])
+
   const goToJobSearchPage = () => {
     window.history.pushState({}, '', '/checkout');
     window.location.reload();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   const goToUploadPartsChecker=()=>{
     window.history.pushState({}, '', '/upload-files');
     window.location.reload();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   const handleDeliveryChange = () => {
     setIsAltAddress(!isAltAddress);
   }
-
-  console.log("isalte", isAltAddress)
 
   return (
     <div className={ expanded ? 'create_a_job_cont pd_240' : 'create_a_job_cont pd_140'}>

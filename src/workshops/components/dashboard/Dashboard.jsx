@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../../stylesheets/dashboard.scss';
 import Tabs from './Tabs';
 import { tabContent } from '../../constants/tabContent';
 
 function Dashboard(props) {
-  const { expanded } = props;
+  const { expanded, setExpanded } = props;
+  useEffect(()=>{
+    const expandedvalue = window.localStorage.getItem('expanded');
+    console.log('expandedvalue', expandedvalue);
+    setExpanded(expandedvalue);
+  },[])
   const handleCreateANewOrder = () => {
     window.history.pushState({}, '', './create-a-job');
     window.location.reload();

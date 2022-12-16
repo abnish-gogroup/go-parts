@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../../stylesheets/checkout.scss';
 import SupplierDetails1 from './SupplierDetails1';
 import SupplierDetails2 from './SupplerDetails2';
@@ -6,6 +6,9 @@ import TopContainer from './TopContainer';
 
 function Checkout(props) {
   const { expanded } = props;
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  })
   const goToThankYouPage = () => {
     window.history.pushState({}, '', '/thank-you-order');
     window.location.reload();

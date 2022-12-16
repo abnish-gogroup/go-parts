@@ -9,22 +9,17 @@ function Sidebar(props) {
 	const { expanded, handleToggleSidebar } = props;
 
 	const goToDashboard = () => {
-		window.history.pushState({}, '', '/all-jobs');
+		window.history.pushState({}, '', '/dashboard');
 		window.location.reload();
 	}
 
-	const goToCreateAJob = () => {
+	const goToCreateJob = () => {
 		window.history.pushState({}, '', '/create-a-job');
 		window.location.reload();
 	}
 
-	const goToAllJob = () => {
-		window.history.pushState({}, '', '/setting');
-		window.location.reload();
-	}
-
 	const goToAllOrders = () => {
-		window.history.pushState({}, '', '/all-orders');
+		window.history.pushState({}, '', '/order-overview');
 		window.location.reload();
 	}
 
@@ -39,7 +34,7 @@ function Sidebar(props) {
 					<div className='side-menu-container'>
 						<ul className='nav navbar-nav'>
 							<li className="menu-item" onClick={goToDashboard}><FontAwesomeIcon icon={faDashboard} className='icon' />Dashboard</li>
-							<li className="menu-item" onClick={goToAllOrders}><FontAwesomeIcon icon={faList} className='icon' />Aufträge</li>
+							<li className="menu-item" onClick={goToCreateJob}><FontAwesomeIcon icon={faList} className='icon' />Aufträge</li>
 							<li className="menu-item" onClick={goToAllOrders}><FontAwesomeIcon icon={faGear} className='icon' /> Einstellungen</li>
 						</ul>
 					</div>

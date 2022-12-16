@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CreateAJob from '../components/createAJob/CreateAJob';
 // import OePaperReadout from '../oePaperReadout/OePaperReadout';
@@ -15,10 +15,25 @@ import PartsChecker from '../components/uploadFiles/PartsChecker';
 
 export default function RouterPath() { 
   const [expanded, setExpanded] = useState(true);
+  
   const location = window.location.pathname;
+  useEffect(()=>{
+   const expandedvalue = window.localStorage.getItem('expanded');
+   console.log('expandedvalue', expandedvalue);
+  //  handleToggleSidebar()
+  //  if(expandedvalue){
+  //  setExpanded(true);
+  //  }
+  //  else {
+  //   setExpanded(false);
+  //  }
+  })
   const handleToggleSidebar=()=>{
     setExpanded(!expanded);
+    window.localStorage.setItem('expanded', expanded);
   }
+
+
   return (
     <BrowserRouter>
       {(location === '/' || location === '/signin') ? '' : <Sidebar expanded={ expanded } handleToggleSidebar={handleToggleSidebar} />}
@@ -27,10 +42,10 @@ export default function RouterPath() {
           <Login />
         </Route>
         <Route path='/dashboard'>
-          <Dashboard expanded ={expanded} />
+          <Dashboard expanded ={expanded} setExpanded={setExpanded} />
         </Route>
         <Route path='/create-a-job'>
-          <CreateAJob expanded ={expanded} />
+          <CreateAJob expanded ={expanded} setExpanded={setExpanded} />
         </Route>
         <Route path='/upload-files'>
           <UploadPartsFile expanded ={expanded} />

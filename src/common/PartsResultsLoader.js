@@ -1,13 +1,10 @@
 import React from 'react'; 
 import '../stylesheets/resultLoader.scss';
 
-function PartsResultLoader(props) {
+function PartsResultLoader() {
   
   return (
     <>
-      <div className="single-loader">
-        <div className="loader-slider"></div>
-      </div>
       <div className="loading-placeholder-container">
         <div className="single-placeholder">
           <div className="loading-placeholder-block">
