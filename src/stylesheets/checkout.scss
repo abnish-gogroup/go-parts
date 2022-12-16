@@ -124,6 +124,19 @@
   text-transform: uppercase;
 }
 
+.mrt_20 {
+  margin-right: 20px;
+}
+
+.supplier_txt {
+  background: #1E8EA5;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 @mixin address_details {
   display: flex;
   padding: 20px;
