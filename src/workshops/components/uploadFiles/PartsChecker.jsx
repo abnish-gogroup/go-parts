@@ -63,7 +63,7 @@ const closeLoaderIn5Seconds = () =>
             <div className='fs_12'>Nummernschild:<span className="number_plate_c">F-TC 154</span></div>
           </div>
           <div className="parts_c_date">
-            <div className='fs_12'>Start Datum: <span className="start_date">19.12.2022</span></div>
+            <div className='fs_12'>Start Datum: <span className="start_date_c">19.12.2022</span></div>
             <div className='fs_12'>Fertigstellung: <span className="end_date_c">21.12.2022</span></div>
             <div className='fs_12'>Auftragsnummer: <input className='order_input' onChange={handleInputChange} value={orderValue} /></div>
           </div>

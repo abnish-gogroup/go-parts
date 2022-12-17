@@ -50,7 +50,7 @@ function PartsSelection(props){
     <button className="parts_order_btn" onClick={goToCheckoutPage}>Bestellen</button>
   </div>
   <div className="parts_selection_desc">
-    <div className="parts_selection_desc_text">Front Schaden - Auffahrunfall</div>
+    <div className="parts_selection_desc_text">Frontschaden - Stoßfänger vorne</div>
     <div className='parts_selection_desc_cont'>
     <div className="selected_parts_desc">
       <div className="selected_parts_model">
