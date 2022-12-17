@@ -16,7 +16,7 @@ function ReportAProblemBox() {
           <div className='fs_12'>19 Dez.</div>
         </div>
         <div className='eta_cont fw_600'>
-          <div>ETA</div>
+          <div>Liefertermin</div>
           <div className='fs_12'>21 Dez.</div>
         </div>
         <div className='total_price_cont fw_600'>

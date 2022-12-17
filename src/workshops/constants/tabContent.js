@@ -39,7 +39,7 @@ const tableContent = [
   {
     jobId: 24122,
     partName: 'Front Schaden - Stoßstange',
-    model: 'Porsche / Macan S',
+    model: 'Porsche/Macan S',
     numberPlate: 'A-PO 1499',
     numberOfParts: 5,
     completion: '12/10/22',
@@ -48,7 +48,7 @@ const tableContent = [
     subRows: [{
       jobId: 14122,
       partName: 'Front Schaden - Stoßstange',
-      model: 'Porsche / Macan S',
+      model: 'Porsche/Macan S',
       numberPlate: 'A-PO 1499',
       numberOfParts: 5,
       completion: '12/10/22',
@@ -58,7 +58,7 @@ const tableContent = [
   {
     jobId: 24122,
     partName: 'Front Schaden - Stoßstange',
-    model: 'Porsche / Macan S',
+    model: 'Porsche/ Macan S',
     numberPlate: 'A-PO 1499',
     numberOfParts: 5,
     completion: '12/10/22',
@@ -126,7 +126,7 @@ export const tabContent = [
   'table2' : {
     jobId2: 24592,
     partName2: 'Schaden an der Hinterachse',
-    model2: 'VW/T-Roc',
+    model2: 'VW / T-Roc',
     numberPlate2: 'S-EA 1334',
     numberOfParts2: 4,
     completion2: '22/12/22',
@@ -149,7 +149,7 @@ export const tabContent = [
   'table2': {
     jobId2: 24235,
     partName2: 'Stossfänger',
-    model2: 'Renault/Clio',
+    model2: 'Renault / Clio',
     numberPlate2: 'A-WC 983',
     numberOfParts2: 1,
     completion2: '03/01/22',
@@ -172,7 +172,7 @@ export const tabContent = [
   'table2': {
     jobId2: 24352,
     partName2: 'Seitenspiegel Links',
-    model2: 'Opel/Astra',
+    model2: 'Opel / Astra',
     numberPlate2: 'M-EL 4578',
     numberOfParts2: 3,
     completion2: '23/12/22',
@@ -220,7 +220,7 @@ export const tabContent = [
   'table2': {
     jobId2: 24556,
     partName2: 'Unterboden Schaden',
-    model2: 'VW/Golf',
+    model2: 'VW / Golf',
     numberPlate2: 'K-FI 1389',
     numberOfParts2: 13,
     completion2: '18/02/22',
