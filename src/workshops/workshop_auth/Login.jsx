@@ -38,7 +38,7 @@ function Login() {
       <div className='login_cont'>
         <form className='registration_form cb_262626 fs_14'>
           <div className='dreg_flex'>
-            <label className='form_label fs_16 fw_500'>Email Addresse</label>
+            <label className='form_label fs_16 fw_500'>Email-Adresse</label>
             <input className='input_box' />
           </div>
           <div className='dreg_flex fs_16 fw_500'>
@@ -72,7 +72,7 @@ function Login() {
           <span>Melde dich an mit Google</span>
         </button>
         <div className='new_user pdb_50'>
-          <span className='mr_3'>Neu bei Goparts?  Registriere deinen</span>
+          <span className='mr_3'>Neu bei Goparts? Registriere deinen</span>
           <span className='cp theme_clr'>Account</span>
         </div>
       </div>

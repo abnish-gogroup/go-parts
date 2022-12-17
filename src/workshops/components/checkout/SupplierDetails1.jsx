@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 function SupplierDetails1(props) {
-  const { supplierName, supplierAddress, supplierEmail, radioBtnName, radioBtnTime } = props;
+  const { supplierName, suppAddsName, supplierCity, supplierPhoneNo, supplierEmail, radioBtnName, radioBtnTime } = props;
   const [startDate, setStartDate] = useState(null);
   return ( 
     <div className='supplier_cont'>
@@ -16,10 +16,18 @@ function SupplierDetails1(props) {
         <div className="supplier_txt">{supplierName}</div>
         <div className="address_details_cont">
           <div className="w_330 mrt_20">
-            <div className="col_262626">Kontakt</div>
-            <div className="pt_10 fb_1">
-              {supplierAddress}
+            <div className="col_262626">Kontakt:</div>
+            <div className=" fb_1">
+              {suppAddsName}
               <br></br>
+              <div className="fb_1">
+              {supplierCity}
+              <br></br>
+              </div>
+              <div className="fb_1">
+              {supplierPhoneNo}
+              <br></br>
+              </div>
               <span className='supp_email'>{supplierEmail}</span>
             </div>
           </div>
@@ -42,7 +50,6 @@ function SupplierDetails1(props) {
                   includeDateIntervals={[
                     { start: subDays(new Date(), 0), end: addDays(new Date(), 500) },
                   ]}
-                  placeholderText='Select Date'
                 />
                 <FontAwesomeIcon icon={faCalendar} className='calendar_style' />
               </div>
@@ -62,9 +69,9 @@ function SupplierDetails1(props) {
             <div className="cell_part bg_tran">Teilenummer</div>
             <div className="cell_mfg bg_tran">Hersteller</div>
             <div className="cell_desc bg_tran">Beschreibung</div>
-            <div className="cell_10 bg_tran">Teile-TYPE</div>
+            <div className="cell_10 bg_tran">Teile-TYP</div>
             <div className="cell_8 bg_tran">Anzahl</div>
-            <div className="cell_15 bg_tran">UVP Marge Preis</div>
+            <div className="cell_15 bg_tran">UVP</div>
             <div className="cell_10 bg_tran">Marge</div>
             <div className="cell_del_price bg_tran">Preis</div>
           </div>
@@ -97,7 +104,7 @@ function SupplierDetails1(props) {
             description='Rahmen Gitter Motorhaube'
             partType='OEM'
             number= '1'
-            margin='31.70'
+            margin='€31.70'
             deliveryPrice='25%'
             price='€24.01'
           />

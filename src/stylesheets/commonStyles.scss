@@ -66,6 +66,10 @@
   font-size: 14px;
 }
 
+.pt_5 {
+  padding-top: 5px;
+}
+
 .fs_16 {
   font-size: 16px;
 }
@@ -112,6 +116,10 @@
   color: #8692A6;
 }
 
+.fsi {
+  font-style: italic;
+}
+
 .tar {
   text-align: right;
 }
@@ -123,10 +131,10 @@
 .mt_40 {
   margin-top: 40px;
 }
-
-.fcapt {
-  text-transform: capitalize;
-}
+ 
+// .fcapt {
+//   text-transform: capitalize;
+// }
 
 .pdr_35 {
   margin-left: 35px;

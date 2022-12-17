@@ -10,22 +10,22 @@ function ReportAProblemBox() {
         </div>
         <div className='job_item_no fw_400 fs_14'>Frontschaden - Stossfänger vorne<span className='theme_clr'>(ID 1234)</span></div>
       </div>
-      <div className='report_a_prob_cont'>
-        <div className='order_from_cont fs_14 fw_600'>
+      <div className='report_a_prob_cont fs_14'>
+        <div className='order_from_cont fw_600'>
           <div>Bestellung am</div>
-          <div className=''>19 Dez.</div>
+          <div className='fs_12'>19 Dez.</div>
         </div>
         <div className='eta_cont fw_600'>
           <div>ETA</div>
-          <div className=''>21 Dez.</div>
+          <div className='fs_12'>21 Dez.</div>
         </div>
         <div className='total_price_cont fw_600'>
           <div>Gesamt Preis</div>
-          <div className=''>€269.94</div>
+          <div className='fs_12'>€269.94</div>
         </div>
         <div className='delivery_addr_cont'>
           <div className='fw_600'>Lieferadresse:</div>
-          <div className='fw_400'>Güntzelstrasse 18, Gilzem, Rheinland-Pfalz(RP), 54298</div>
+          <div className='fw_400 fs_12'>Güntzelstrasse 18, Gilzem, Rheinland-Pfalz(RP), 54298</div>
         </div>
         <div className='report_a_prob_text'>
           Melde ein Problem

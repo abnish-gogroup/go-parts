@@ -55,7 +55,7 @@ const closeLoaderIn5Seconds = () =>
     <div className={ expanded ? "parts_checker_result_cont pd_240" : "parts_checker_result_cont pd_140" }>
       <div className="parts_checker_text fs_30">PartsChecker</div>
       <div className="parts_checker_card">
-        <div className="parts_name fw_600 ls_7">Frontschaden - Stosßfänger vorne</div>
+        <div className="parts_name fw_600 ls_7">Frontschaden - Stossfänger vorne</div>
         <div className="parts_c_desc">
           <div className="parts_c_model">
             <div className='fs_12'>Model: <span className="model_name">Skoda Fabia</span></div>
@@ -74,7 +74,7 @@ const closeLoaderIn5Seconds = () =>
                 <label htmlFor="fileId" className="file-upload-btn cp"><FontAwesomeIcon icon={faCloudArrowUp}  /></label>
             </div> }
           </div>
-          {showImage ? '' :<div className='fs_12'>Upload an image</div>}
+          {showImage ? '' :<div className='fs_12'>Bilder hochladen</div>}
 
         </div>
         <div className="file_readable_data">

@@ -51,18 +51,21 @@ function PartsSelection(props){
   </div>
   <div className="parts_selection_desc">
     <div className="parts_selection_desc_text">Front Schaden - Auffahrunfall</div>
+    <div className='parts_selection_desc_cont'>
     <div className="selected_parts_desc">
       <div className="selected_parts_model">
-        <div className='fw_400'>Model: <span className="model_name">Skoda Fabia</span></div>
-        <div className='fw_400'>Kunde: <span  className="cust_name">A. Gabco</span></div>
+        <div className='fw_400'>Model:<span className="model_name">Skoda Fabia</span></div>
+        <div className='fw_400'>Kunde:<span  className="cust_name">A. Gabco</span></div>
         <div className='fw_400'>Nummernschild:<span className="number_plate">F-TC 154</span></div>
       </div>
       <div className="parts_selection_date">
-      <div className='fw_400'>Start Datum: <span className="start_date">19.12.2022</span></div>
-      <div className='fw_400'>Fertigstellung: <span className="end_date">21.12.2022</span></div>
-      <div className='fw_400'>Auftragsnummer: <span className="order_input_value">1234</span></div>
+      <div className='fw_400'>Start Datum:<span className="start_date">19.12.2022</span></div>
+      <div className='fw_400'>Fertigstellung:<span className="end_date">21.12.2022</span></div>
+      <div className='fw_400'>Auftragsnummer:<span className="order_input_value">1234</span></div>
     </div>
     {/* <img src="http://static-assets-goparts.s3.amazonaws.com/static-images/Parts%20Selection/add-a-photo.png" className="placeholder_img" /> */}
+    </div>
+    <div className='pdb_10'><button className='parts_order_btn'>Teile hinzufügen</button></div>
     </div>
   </div>
   <div className="part_number_details">
@@ -82,7 +85,7 @@ function PartsSelection(props){
               Schnellste Lieferung
               </div>
               <div className='ddc cp pdl_35'>
-              Bester Preis zur gewünschten Lieferung
+              Günstigster Preis zur gewünschten Lieferung
               </div>
               <div className='ddc cp pdl_35'>HUK Vorgabe</div>
           </div>

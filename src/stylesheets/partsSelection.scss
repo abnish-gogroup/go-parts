@@ -4,7 +4,7 @@
 } 
 
 .parts_selection_text_cont {
-  text-transform: capitalize;
+  // text-transform: capitalize;
   display: flex;
   justify-content: space-between;
   padding: 30px 0 30px 0;
@@ -75,17 +75,17 @@
 }
 
 .start_date {
-  padding-left: 37px;
+  padding-left: 43px;
   font-weight: 600;
 }
 
 .end_date {
-  padding-left: 27px;
+  padding-left: 35px;
   font-weight: 600;
 }
 
 .order_input_value {
-  padding-left: 9px;
+  padding-left: 14px;
   font-weight: 600;
 }
 
@@ -185,7 +185,7 @@ ul.accordion-list-parts-selection {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding-top: 5px;
-  text-transform: capitalize;
+  // text-transform: capitalize;
   background-color: #fff;
   margin-left: -20px;
   border-radius: 5px;
@@ -212,6 +212,17 @@ ul.accordion-list-parts-selection {
 
 .pdl_5 {
   padding-left: 5px;
+}
+
+.parts_selection_desc_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-right: 20px;
+}    
+
+.pdb_10 {
+  padding-bottom: 10px;
 }
 
 .pdl_35 {

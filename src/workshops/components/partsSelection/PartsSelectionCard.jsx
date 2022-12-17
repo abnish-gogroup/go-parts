@@ -42,12 +42,12 @@ function PartsSelectionCard(props) {
       </div>
       <div className='parts_bidding_desc'>
         <div className='w_5'></div>
-        <div className='w_25'>NORA ZENTRUM Wolfsburg</div>
+        <div className='w_25'>NORA Zentrum Wolfsburg</div>
         <div className='w_14'>2 Tage</div>
         <div className='w_7'>OEM</div>
-        <div className='w_7'>€12.25</div>
-        <div className='w_10'>9%</div>
-        <div className='w_10'>€11.2</div>
+        <div className='w_7'>€31.70</div>
+        <div className='w_10'>25%</div>
+        <div className='w_10'>€24.01</div>
         <div className='w_12'>€0</div>
         <div className='w_5 radio_content'><input name='parts_2_selection' type='radio' value='rd_4' defaultChecked /><label className='pdl_10 showChooseText4'>Auswählen</label></div>
       </div>
@@ -55,11 +55,11 @@ function PartsSelectionCard(props) {
       <div className='parts_bidding_desc'>
         <div className='w_5'></div>
         <div className='w_25'>Brass Gruppe</div>
-        <div className='w_14'>2 Tag</div>
+        <div className='w_14'>1 Tag</div>
         <div className='w_7'>OEM</div>
-        <div className='w_7'>€12.25</div>
-        <div className='w_10'>15%</div>
-        <div className='w_10'>€10.41</div>
+        <div className='w_7'>€31.70</div>
+        <div className='w_10'>10%</div>
+        <div className='w_10'>€28.53</div>
         <div className='w_12'>€0</div>
         <div className='w_5 radio_content'><input name='parts_2_selection' type='radio'  value='rd_5' /><label className='pdl_10 showChooseText5'>Auswählen</label></div>
       </div>

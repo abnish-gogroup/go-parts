@@ -54,11 +54,11 @@ function ThankYouOrder(props) {
             <div className='hz_line'></div>
             <div className="supp_desc">
               <div></div>
-              <div>Lieferung <span className='pdl_40'> €0</span></div>
+              <div className='w_161'>Lieferung<span className='pdl_68'><span>€0</span></span></div>
             </div>
             <div className="supp_desc">
               <div></div>
-              <div className='fw_600'>Order Total<span className='pdl_40'>€269.94</span></div>
+              <div className='fw_600'>Gesamt Preis<span className='pdl_40'>€269.94</span></div>
             </div>
           </div>
           <div className='hz_line'></div>

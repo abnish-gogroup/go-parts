@@ -51,7 +51,7 @@ function PartsSelectionCardExpand(props) {
       </div>
       <div className='parts_bidding_desc'>
         <div className='w_5'></div>
-        <div className='w_25'>NORA ZENTRUM Wolfsburg</div>
+        <div className='w_25'>NORA Zentrum Wolfsburg</div>
         <div className='w_14'>2 Tage</div>
         <div className='w_7'>OEM</div>
         <div className='w_7'>€12.25</div>
@@ -76,7 +76,7 @@ function PartsSelectionCardExpand(props) {
       <div className='parts_bidding_desc'>
         <div className='w_5'></div>
         <div className='w_25'>Brass Gruppe</div>
-        <div className='w_14'>2 Tag</div>
+        <div className='w_14'>2 Tage</div>
         <div className='w_7'>OEM</div>
         <div className='w_7'>€12.25</div>
         <div className='w_10'>15%</div>

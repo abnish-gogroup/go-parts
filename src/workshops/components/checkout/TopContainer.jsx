@@ -11,7 +11,7 @@ function TopContainer(props) {
         <div className='checkout_price'>
           Preis: <span className='price_value'>€269.94</span>
         </div>
-        <button className='checkout_order_btn fs_14' onClick={props.goToThankYouPage}>Teile Bestellen</button>
+        <button className='checkout_order_btn fs_14' onClick={props.goToThankYouPage}>Teile bestellen</button>
       </div>
     </div>
   )

@@ -51,7 +51,7 @@ function UploadPartsFile(props){
       <div className="tac">
         {showLoader ? <div className='loaderCont'><Loader /></div> :
         <button className="parts_upload_btn cp" type="submit" onClick={handlePartsChecker}>PartsChecker</button>}
-        <div className="calculation_text">Laden Sie hier Ihr Gutachten oder die Schadenskalkulation hoch</div>
+        <div className="calculation_text">Laden Sie hier Ihre Teileliste oder die Schadenskalkulation hoch</div>
       </div>
     </div>
   </div>
