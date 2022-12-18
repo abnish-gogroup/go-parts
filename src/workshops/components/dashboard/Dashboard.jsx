@@ -24,7 +24,7 @@ function Dashboard(props) {
           <div className="order_in_del_count pdt_10">4</div>
         </div>
         <div className="parts_order_received_cont">
-          <div>Teile Bestellung erhalten</div>
+          <div>Teile Bestellung geliefert</div>
           <div className="parts_order_rec_count pdt_10">2</div>
         </div>
         <div className="repair_complete_cont">

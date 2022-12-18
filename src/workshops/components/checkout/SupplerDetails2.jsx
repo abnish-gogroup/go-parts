@@ -16,7 +16,7 @@ function SupplierDetails2(props) {
         <div className="supplier_txt">{supplierName}</div>
         <div className="address_details_cont">
           <div className="w_330">
-            <div className="col_262626">Kontakt:</div>
+            <div className="col_262626 fw_600">Kontakt:</div>
             <div className="pt_10 fb_1">
               {suppAddsName}
               <br></br>
