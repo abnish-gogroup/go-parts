@@ -34,7 +34,7 @@ function ThankYouOrder(props) {
 
           <div className="display_flex">
             <div className="grey_txt fs_16 fw_600">Ihre Bestellung wird geliefert an:</div>
-            <div className='fs_13 fw_600'>Nora Zentrum Wolfsburg, 38444 Wolfsburg, 05361 204181-0</div>
+            <div className='fs_13 fw_600'>Güntzelstrasse 18, 54298 Gilzem</div>
           </div>
         </div>
         <div>
