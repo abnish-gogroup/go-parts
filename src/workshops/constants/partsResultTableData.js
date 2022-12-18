@@ -34,7 +34,7 @@ const partsResultTableData = [
   {
     Vehicle_details: 'SKODA-FABIA (6Y) 4/5D/ESTATE',
     oe_number: '1U0853621CMEL',
-    description: 'Stoßfänger vo',
+    description: 'Emblem',
     UVP: '€12.25',
     result: 'Die OE-Nr. passt zur VIN',
     correct_part_no: ''
