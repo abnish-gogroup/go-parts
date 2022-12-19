@@ -210,7 +210,7 @@ export const tabContent = [
     'table': {
     jobId: 24144,
     partName: 'Heckscheibe',
-    model: 'Skoda / Suberb',
+    model: 'Skoda / Superb',
     numberPlate: 'A-PI 198',
     numberOfParts: 3,
     completion: '18/02/22',
