@@ -148,7 +148,7 @@ export const tabContent = [
   },
   'table2': {
     jobId2: 24235,
-    partName2: 'Stossfänger',
+    partName2: 'Stoßfänger',
     model2: 'Renault / Clio',
     numberPlate2: 'A-WC 983',
     numberOfParts2: 1,
