@@ -2,7 +2,7 @@ const partsResultTableData = [
   {
     Vehicle_details: 'SKODA-FABIA (6Y) 4/5D/ESTATE',
     oe_number: '6Y0807221E',
-    description: 'Stoßfänger vo',
+    description: 'Stoßstange Vorne',
     UVP: '€167.50',
     result: 'Die OE-Nr. passt zur VIN',
     correct_part_no: ''
