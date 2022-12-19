@@ -25,7 +25,7 @@ function ReportAProblemBox() {
         </div>
         <div className='delivery_addr_cont'>
           <div className='fw_600'>Lieferadresse:</div>
-          <div className='fw_400 fs_12'>Güntzelstrasse 18, Gilzem, Rheinland-Pfalz(RP), 54298</div>
+          <div className='fw_400 fs_12'>Güntzelstrasse 18, 54298 Gilzem</div>
         </div>
         <div className='report_a_prob_text'>
           Melde ein Problem
