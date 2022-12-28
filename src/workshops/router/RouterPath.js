@@ -12,6 +12,7 @@ import OrderOverview from '../components/orderOverview/OrderOverview';
 import PartsSelection from '../components/partsSelection/PartsSelection';
 import UploadPartsFile from '../components/uploadFiles/UploadPartsFile';
 import PartsChecker from '../components/uploadFiles/PartsChecker';
+import AllOrders from '../components/allOrders/AllOrders';
 
 export default function RouterPath() { 
   const [expanded, setExpanded] = useState(true);
@@ -52,6 +53,9 @@ export default function RouterPath() {
         </Route>
         <Route path='/order-overview'>
           <OrderOverview expanded ={expanded} />
+        </Route>
+        <Route path='/all-orders'>
+          <AllOrders expanded ={expanded} />
         </Route>
        
         {/* <Route path='/oe-readout'>
