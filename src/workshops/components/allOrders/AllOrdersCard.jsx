@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 function AllOrdersCard(props) {
-  const { orderID, noOfOrders, status, classname, deliveryTime, marginPercent, margin, total } = props;
+  const { orderID, noOfOrders, status, classname, deliveryTime, marginPercent, margin, total, goToComplaintsPage } = props;
   return (
     <div className='parts_row_cont'>
       <div className='parts_row_class pdl_10'>
@@ -22,7 +22,7 @@ function AllOrdersCard(props) {
         <div className='w_10'>{total}</div>
         <div className='w_20 dfx'>
           <button className='view_btn'>Ansehen</button>
-          <button className='complain_btn'>Reklamation</button>
+          <button className='complain_btn' onClick={goToComplaintsPage}>Reklamation</button>
         </div>
       </div>
     </div>

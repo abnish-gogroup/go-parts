@@ -9,6 +9,10 @@ function AllOrders(props) {
   const { expanded } = props;
 
   useEffect(() => {
+    $(".complain_btn").click(function(e){
+      goToComplaintsPage();
+  })
+
     $(document).ready(function () {
       $('.accordion-list-all-orders > li > .all_order_answer').hide();
       $('.accordion-list-all-orders > li').on('click', function () {
@@ -23,6 +27,11 @@ function AllOrders(props) {
       });
     });
   }, [])
+ 
+  const goToComplaintsPage = () => {
+    window.history.pushState({}, '', '/parts-complaints');
+    window.location.reload();
+  }
 
   return (
     <div className={expanded ? 'main_container_all_orders pd_240' : 'main_container_all_orders pd_140'}>
@@ -56,6 +65,7 @@ function AllOrders(props) {
               marginPercent='€0'
               margin='€80'
               total='€1240'
+              goToComplaintsPage={goToComplaintsPage}
             />
           </li>
 
@@ -69,6 +79,7 @@ function AllOrders(props) {
               marginPercent='€0'
               margin='€249'
               total='€1451'
+              goToComplaintsPage={goToComplaintsPage}
             />
           </li>
 
@@ -82,6 +93,7 @@ function AllOrders(props) {
               marginPercent='€80'
               margin='€94'
               total='€786'
+              goToComplaintsPage={goToComplaintsPage}
             />
           </li>
 
@@ -95,6 +107,7 @@ function AllOrders(props) {
               marginPercent='€20'
               margin='€30'
               total='€211'
+              goToComplaintsPage={goToComplaintsPage}
             />
           </li>
 
@@ -108,6 +121,7 @@ function AllOrders(props) {
               marginPercent='€5'
               margin='€24'
               total='€120'
+              goToComplaintsPage={goToComplaintsPage}
             />
           </li>
         </ul>

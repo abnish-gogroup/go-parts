@@ -13,6 +13,7 @@ import PartsSelection from '../components/partsSelection/PartsSelection';
 import UploadPartsFile from '../components/uploadFiles/UploadPartsFile';
 import PartsChecker from '../components/uploadFiles/PartsChecker';
 import AllOrders from '../components/allOrders/AllOrders';
+import PartsComplain from '../components/partsComplain/PartsComplain';
 
 export default function RouterPath() { 
   const [expanded, setExpanded] = useState(true);
@@ -57,10 +58,9 @@ export default function RouterPath() {
         <Route path='/all-orders'>
           <AllOrders expanded ={expanded} />
         </Route>
-       
-        {/* <Route path='/oe-readout'>
-            <OePaperReadout />
-          </Route> */}
+        <Route path='/parts-complaints'>
+          <PartsComplain expanded ={expanded} />
+        </Route>
       </Switch>
     </BrowserRouter>
   )
