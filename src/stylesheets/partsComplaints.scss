@@ -17,7 +17,8 @@
 .complaint_supplier {
   background-color: #1e8ea5;
   color: #fff;
-  padding: 5px 10px;
+  padding: 6px 12px;
+  text-transform: uppercase;
 }
 
 .address_delivery_cont {
@@ -40,6 +41,6 @@
 .complain_table_body {
   display: flex;
   justify-content: space-between;
-  padding: 10px 12px;
+  padding: 12px;
   align-items: center;
 }
