@@ -9,13 +9,13 @@
 @mixin action_btn {
   border: none;
   padding: 1px 10px;
-  margin-right: 7px;
   border-radius: 3px;
 }
 
 .view_btn {
   @include action_btn;
   background-color: #fff;
+  margin-right: 7px;
   border: 1px solid #1e8ea5;
   color: #1e8ea5;
   &:hover {
