@@ -43,7 +43,6 @@ export function startCheckingForParts(data) {
         for (let i = 0; i < partNumbersArray.length; i++) {
           oe_number += "&oe_numbers[]=" + partNumbersArray[i];
         }
-        console.log("oenumber", oe_number);
 
         let url = endpoints.GP_PARTS_CHECKER;
         let queryString = `?fin=${vin}${oe_number}`;
@@ -56,7 +55,6 @@ export function startCheckingForParts(data) {
           .then((jsonResponse) => {
             let response = jsonResponse;
 
-            console.log("response",response)
             if ((response && response.message == "unauthorized") ||
               (response &&
                 response.status &&
@@ -66,7 +64,6 @@ export function startCheckingForParts(data) {
                 response.payload.data &&
                 response.payload.data.vin_status == 1)
             ) {
-              console.log("error", response);
               const checkedPartsData = {
                 isVinIdentified: false,
                 isPartNumberFound: false,
@@ -82,7 +79,6 @@ export function startCheckingForParts(data) {
               };
               dispatch(updateCheckerResult(checkedPartsData));
             } else {
-              console.log("success", response);
               let isVin =
                   response &&
                   response.payload &&

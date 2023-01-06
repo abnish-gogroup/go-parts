@@ -2,7 +2,6 @@ import React from 'react';
 import DashboardTable from './DashboardTable';
 
 export default function Tab(props) {
-  console.log('props', props);
   const { jobId, partName, model, numberPlate, numberOfParts, completion, name, title } = props.tab.table;
   const { jobId2, partName2, model2, numberPlate2, numberOfParts2, completion2, name2, title2 } = props.tab.table2;
 
