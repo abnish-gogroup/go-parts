@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../../../stylesheets/partsSelection.scss';
+import '../../../stylesheets/partsOverviewTab.scss';
 import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faCheck } from '@fortawesome/free-solid-svg-icons';
@@ -11,14 +12,14 @@ function PartsOrderOverviewTab(props){
  
   useEffect(() => { 
     $(document).ready(function () {
-      // $('.accordion-list-parts-selection > li > .parts_answer').hide();
-      $('.accordion-list-parts-selection > li').on('click', function () {
+      $('.accordion-list-parts-tab > li > .parts_ans_tab').hide();
+      $('.accordion-list-parts-tab > li').on('click', function () {
         if ($(this).hasClass("active")) {
-          $(this).removeClass("active").find(".parts_answer").slideUp();
+          $(this).removeClass("active").find(".parts_ans_tab").slideUp();
         } else {
-          $(".accordion-list-parts-selection > li.active .parts_answer").slideUp();
-          $(".accordion-list-parts-selection > li.active").removeClass("active");
-          $(this).addClass("active").find(".parts_answer").slideDown();
+          $(".accordion-list-parts-tab > li.active .parts_ans_tab").slideUp();
+          $(".accordion-list-parts-tab > li.active").removeClass("active");
+          $(this).addClass("active").find(".parts_ans_tab").slideDown();
         }
         return false;
       });
@@ -44,7 +45,7 @@ function PartsOrderOverviewTab(props){
       <div className='w_17'>ANZAHL</div>
     </div>
 
-    <ul className="accordion-list-parts-selection">
+    <ul className="accordion-list-parts-tab">
         <li>
           <div className='job_row_cont'>
             <div className='job_row_class'>
@@ -106,7 +107,7 @@ function PartsOrderOverviewTab(props){
               <div className='w_17'></div>
             </div>
           </div>
-          <div className="parts_answer pdl_30">
+          <div className="parts_ans_tab pdl_30">
             <PartsOverviewTabCard />
           </div>
         </li>

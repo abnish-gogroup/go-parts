@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import '../../../stylesheets/partsOverviewTab.scss';
 import PartsOverviewDescTab from './PartsOverviewDescTab';
 import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,14 +9,14 @@ function PartsOverviewTabCard() {
 
   useEffect(() => { 
     $(document).ready(function () {
-      $('.accordion-list-parts-selection > li > .parts_answer').hide();
-      $('.accordion-list-parts-selection > li').on('click', function () {
+      $('.accordion-list-parts-overview-tab > li > .parts_ovr_answer').hide();
+      $('.accordion-list-parts-overview-tab > li').on('click', function () {
         if ($(this).hasClass("active")) {
-          $(this).removeClass("active").find(".parts_answer").slideUp();
+          $(this).removeClass("active").find(".parts_ovr_answer").slideUp();
         } else {
-          $(".accordion-list-parts-selection > li.active .parts_answer").slideUp();
-          $(".accordion-list-parts-selection > li.active").removeClass("active");
-          $(this).addClass("active").find(".parts_answer").slideDown();
+          $(".accordion-list-parts-overview-tab > li.active .parts_ovr_answer").slideUp();
+          $(".accordion-list-parts-overview-tab > li.active").removeClass("active");
+          $(this).addClass("active").find(".parts_ovr_answer").slideDown();
         }
         return false;
       });
@@ -24,7 +25,7 @@ function PartsOverviewTabCard() {
 
   return (
     <div>
-      <ul className="accordion-list-parts-selection">
+      <ul className="accordion-list-parts-overview-tab">
         <li>
           <div className='job_row_cont'>
             <div className='job_row_class'>
@@ -41,7 +42,7 @@ function PartsOverviewTabCard() {
               <div className='w_17'></div>
             </div>
           </div>
-          {/* <div className="parts_answer">
+          {/* <div className="parts_ovr_answer">
           <PartsOverviewDescTab />
           </div> */}
         </li>
@@ -62,7 +63,7 @@ function PartsOverviewTabCard() {
               <div className='w_17'></div>
             </div>
           </div>
-          <div className="parts_answer pdl_10">
+          <div className="parts_ovr_answer pdl_10">
           <PartsOverviewDescTab />
           </div>
         </li>
