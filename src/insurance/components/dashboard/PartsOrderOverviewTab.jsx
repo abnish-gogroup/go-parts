@@ -3,7 +3,7 @@ import '../../../stylesheets/partsSelection.scss';
 import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faCheck } from '@fortawesome/free-solid-svg-icons';
-import PartsOverviewTabCard from './ParrtsOverviewTabCard';
+import PartsOverviewTabCard from './PartsOverviewTabCard';
 
 function PartsOrderOverviewTab(props){
   const { expanded } = props; 

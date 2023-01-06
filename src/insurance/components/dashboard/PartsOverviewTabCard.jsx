@@ -8,7 +8,7 @@ function PartsOverviewTabCard() {
 
   useEffect(() => { 
     $(document).ready(function () {
-      // $('.accordion-list-parts-selection > li > .parts_answer').hide();
+      $('.accordion-list-parts-selection > li > .parts_answer').hide();
       $('.accordion-list-parts-selection > li').on('click', function () {
         if ($(this).hasClass("active")) {
           $(this).removeClass("active").find(".parts_answer").slideUp();

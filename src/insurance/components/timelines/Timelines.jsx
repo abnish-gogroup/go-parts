@@ -36,12 +36,12 @@ function Timelines() {
 
   return (
     <ol className='timeline_cont' id='timeline_cont'>
-      <li className='tml_list active'><span className='tml_txt'>Kalkulation Erstellt</span><span className='hidden'>Kalkulation einsehen</span></li>
-      <li className='tml_list'><span className='tml_txt'>Teile Angefragt</span><span className='hidden'>Kalkulation einsehen</span></li>
-      <li className="tml_list"><span className='tml_txt'>Teile Bestellt</span><span className='hidden'>Kalkulation einsehen</span></li>
-      <li className='tml_list'><span className='tml_txt'>Teile Geliefert</span><span className='hidden'>Kalkulation einsehen</span></li>
-      <li className='tml_list'><span className='tml_txt'>Teile Retouren</span><span className='hidden'>Kalkulation einsehen</span></li>
-      <li className='tml_list'><span className='tml_txt'>Reparatur Abgeschlossen</span><span className='hidden'>Kalkulation einsehen</span></li>
+      <li className='tml_list active'><span className='tml_txt'>Kalkulation Erstellt</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
+      <li className='tml_list'><span className='tml_txt'>Teile Angefragt</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
+      <li className="tml_list"><span className='tml_txt'>Teile Bestellt</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
+      <li className='tml_list'><span className='tml_txt'>Teile Geliefert</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
+      <li className='tml_list'><span className='tml_txt'>Teile Retouren</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
+      <li className='tml_list'><span className='tml_txt'>Reparatur Abgeschlossen</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
     </ol>
   )
 }
