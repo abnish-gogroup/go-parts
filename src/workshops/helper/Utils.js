@@ -327,3 +327,15 @@ export function postMessageToParentWindow(data) {
 export function randomIntFromInterval(min, max) { 
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
+
+export function getHeaderName(pathname){
+    if(pathname.includes('workshop')){
+      return 'Werkstatt';
+    }
+    if(pathname.includes('insurance')){
+      return 'Versicherung';
+    }
+    else{
+      return 'Werkstatt';     
+    }
+}

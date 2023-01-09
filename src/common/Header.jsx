@@ -3,6 +3,7 @@ import '../stylesheets/header.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { getHeaderName } from '../workshops/helper/Utils';
 // import NotificationsCart from '../common/NotificationsCart';
 
 
@@ -24,7 +25,7 @@ function Header(props) {
       <nav className={expanded ? 'navbar navbar-fixed-top' : 'navbar navbar-fixed-top-collapse'}>
         <div className='top_navbar'>
           <img src='https://d3brnpc5nhvc9v.cloudfront.net/site/static-images/goparts-logo.png' className='logo' onClick={handleGoToIndexPage} />
-          <span className='theme_clr fs_18 ls_1 pdl_10'>Werkstatt</span>
+         <span className='theme_clr fs_18 ls_1 pdl_10'>  { getHeaderName(window.location.pathname) }</span>
         </div>
         <div className='right_navbar'> 
         <div className="position-relative">

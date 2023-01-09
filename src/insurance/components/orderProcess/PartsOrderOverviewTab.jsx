@@ -55,9 +55,9 @@ function PartsOrderOverviewTab(props) {
                 </div>
                 <div className='w_20'>Stoßstange vorne</div>
                 <div className='w_20'>12/06/22 12:15 </div>
-                <div className='w_25 pdl_10'>2 Tage</div>
+                <div className='w_25 pdl_20'>2 Tage</div>
                 <div className='w_20'></div>
-                <div className='w_17'>€500,20</div>
+                <div className='w_17 pdl_20'>€500,20</div>
                 <div className='w_17'></div>
               </div>
             </div>
@@ -76,9 +76,9 @@ function PartsOrderOverviewTab(props) {
                 </div>
                 <div className='w_20'>Batterie</div>
                 <div className='w_20'>12/06/22 12:15 </div>
-                <div className='w_25 pdl_10'>2 Tage</div>
+                <div className='w_25 pdl_20'>2 Tage</div>
                 <div className='w_20'></div>
-                <div className='w_17'>€492,25</div>
+                <div className='w_17 pdl_20'>€492,25</div>
                 <div className='w_17'></div>
               </div>
             </div>
@@ -97,13 +97,13 @@ function PartsOrderOverviewTab(props) {
                 </div>
                 <div className='w_20'>Motorhaube</div>
                 <div className='w_20'>10/06/22 12:15</div>
-                <div className='w_25 pdl_10'>Hinweis: Lieferung zu lang</div>
+                <div className='w_25 pdl_20'>Hinweis: Lieferung zu lang</div>
                 <div className='w_20'></div>
-                <div className='w_17'>€510</div>
+                <div className='w_17 pdl_20'>€510</div>
                 <div className='w_17'></div>
               </div>
             </div>
-            <div className="parts_ans_tab pdl_30">
+            <div className="parts_ans_tab bg_fafaff">
               <PartsOverviewTabCard1
                 offer='Angebote'
                 date='10/06/22 12:30'
@@ -125,13 +125,13 @@ function PartsOrderOverviewTab(props) {
                 </div>
                 <div className='w_20'>LED-Scheinwerfer</div>
                 <div className='w_20'>12/06/22 12:15</div>
-                <div className='w_25 pdl_10'>2 Tage</div>
+                <div className='w_25 pdl_20'>2 Tage</div>
                 <div className='w_20'></div>
-                <div className='w_17'>€492.25</div>
+                <div className='w_17 pdl_20'>€492.25</div>
                 <div className='w_17'></div>
               </div>
             </div>
-            <div className="parts_ans_tab pdl_30">
+            <div className="parts_ans_tab bg_fafaff">
               <PartsOverviewTabCard2
                 offer='Angebote'
                 date='10/06/22 12:30'

@@ -5,7 +5,7 @@ function InvoiceDashboardTable(props) {
   const { insuranceData } = props;
 
   const goToOrderProcessScreen = () => {
-    window.history.pushState({}, '', '/order-process');
+    window.history.pushState({}, '', '/insurance-order-process');
     window.location.reload();
   }
 

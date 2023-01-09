@@ -70,7 +70,7 @@ export default function RouterPath() {
         <Route path='/insurance-dashboard'>
           <InsuranceDashboard expanded={expanded} />
         </Route>
-        <Route path='/order-process'>
+        <Route path='/insurance-order-process'>
           <OrderProcess expanded={expanded} />
         </Route>
       </Switch>
