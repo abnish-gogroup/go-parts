@@ -217,3 +217,10 @@
 .tabs__item:not(:last-child) {
   margin-right: 20px;
 }
+
+.overview {
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 2px solid #1E8EA5;
+}

@@ -1,14 +1,12 @@
-const insuranceTabData = [ 
-  { jobId: 1,
-    name: "Übersicht",
-    item: [{
-      orderNo: 1,
-      caseNo: '294ß2',
-      workshop: 'Easy Car',
-      partDealer: 'Nora Zentrum Wob.',
-      currentStatus: 'In Bearbeitung',
-      process: 'Kalkulation erstellt',
-      date: "12/06/22",
+const insuranceData = [ 
+  {
+    orderNo: 1,
+    caseNo: '294ß2',
+    workshop: 'Easy Car',
+    partDealer: 'Nora Zentrum Wob.',
+    currentStatus: 'In Bearbeitung',
+    process: 'Kalkulation erstellt',
+    date: "12/06/22",
     },
   { jobId: 2,
     orderNo: 2,
@@ -90,34 +88,7 @@ const insuranceTabData = [
     currentStatus: 'In Bearbeitung',
     process: 'Kalkulation erstellt',
     date: "12/06/22",
-  }],
-  },
-  {
-    jobId: 2,
-    name: 'Teile',
-    item: [
-      {
-        shares: 'SHARES',
-        date: '12/06/22 12:15',
-        delivery: '2 Tage',
-        uvp: '',
-        price: '€500,20',
-        numberOfOrder: ''
-    }]
-  },
-  {
-    jobId: 3,
-    name: 'Bestellprozess',
-    item: [
-      {
-        shares: 'SHARES',
-        date: '12/06/22 12:15',
-        delivery: '2 Tage',
-        uvp: '',
-        price: '€500,20',
-        numberOfOrder: ''
-    }]
-  },
+  }
 ];
 
-export default insuranceTabData;
+export default insuranceData;

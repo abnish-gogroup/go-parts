@@ -1,33 +1,30 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../../../stylesheets/dashboard.scss';
-import NavigationTabs from '../orderProcess/NavigationTabs';
-import insuranceData from '../../../workshops/constants/insuranceTabData';
+import NavigationTabs from './NavigationTabs';
+import insuranceOrderProcessData from '../../../workshops/constants/insuranceOrderProcessData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import InvoiceDashboardTable from './InvoiceDashboardTable';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-
-function InsuranceDashboard(props) {
+function OrderProcess(props) {
   const { expanded } = props;
 
   return (
     <div className={expanded ? "main_dashboard_container h_150 pd_240" : 'main_dashboard_container h_150 pd_140'}>
       <div className="dashboard_text_cont">
         <div className="dashboard_text fs_30">
-          Dashboard
+          Bestellübersicht
         </div>
         <div className='search_bar_cont'>
-          <input className='search_box pd_ins' placeholder='Auftragssuche' />
+          <input className='search_box pd_ins' placeholder='Suche' />
           <FontAwesomeIcon icon={faMagnifyingGlass} className='search_icon top_10' />
         </div>
       </div>
       <small className='theme_clr float_r'>Erweiterte Suche</small>
       <div className='container'>
-        <div className='overview'>Übersicht</div>
-        <InvoiceDashboardTable insuranceData={insuranceData} />
+        <NavigationTabs tabs={insuranceOrderProcessData} />
       </div>
     </div>
   )
 }
 
-export default InsuranceDashboard;
+export default OrderProcess;

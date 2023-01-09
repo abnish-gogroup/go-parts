@@ -16,6 +16,7 @@ import AllOrders from '../components/allOrders/AllOrders';
 import PartsComplain from '../components/partsComplain/PartsComplain';
 import InsuranceLogin from '../../insurance/components/login/InsuranceLogin';
 import InsuranceDashboard from '../../insurance/components/dashboard/InsuranceDashboard';
+import OrderProcess from '../../insurance/components/orderProcess/OrderProcess';
 
 export default function RouterPath() { 
   const [expanded, setExpanded] = useState(true);
@@ -66,8 +67,11 @@ export default function RouterPath() {
         <Route path='/insurance-login'>
           <InsuranceLogin expanded ={expanded} />
         </Route>
-        <Route path={'/insurance-dashboard'}>
+        <Route path='/insurance-dashboard'>
           <InsuranceDashboard expanded={expanded} />
+        </Route>
+        <Route path='/order-process'>
+          <OrderProcess expanded={expanded} />
         </Route>
       </Switch>
     </BrowserRouter>

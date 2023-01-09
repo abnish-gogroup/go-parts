@@ -3,11 +3,11 @@ import Navigation from './Navigation';
 import Tab from './Tab';
 
 export default function NavigationTabs(props) {
-  const [activeTabId, setActiveTab] = React.useState(props.tabs[0].jobId);
+  const [activeTabId, setActiveTab] = React.useState(props.tabs[0].id);
 
   const activeTab = React.useMemo(() => (
     props.tabs.find((tab) => (
-      tab.jobId === activeTabId
+      tab.id === activeTabId
     ))
   ), [activeTabId, props.tabs]);
 

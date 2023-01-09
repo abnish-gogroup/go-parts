@@ -1,55 +1,40 @@
-import React, { useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faCheck } from '@fortawesome/free-solid-svg-icons';
-import $ from 'jquery';
-import PartsSelectionCard from '../../../workshops/components/partsSelection/PartsSelectionCard';
+import React from 'react';
+import OrderSummaryBox from './OrderSummaryBox';
 
 function InvoiceDashboardTable(props) {
-  const {  orderNo, caseNo, workshop, partDealer, currentStatus, process, date } = props;
-  
-  // useEffect(() => {
-  //   $(document).ready(function () {
-  //     $('.accordion-list-parts-selection > li > .parts_answer').hide();
-  //     $('.accordion-list-parts-selection > li').on('click', function () {
-  //       if ($(this).hasClass("active")) {
-  //         $(this).removeClass("active").find(".parts_answer").slideUp();
-  //       } else {
-  //         $(".accordion-list-parts-selection > li.active .parts_answer").slideUp();
-  //         $(".accordion-list-parts-selection > li.active").removeClass("active");
-  //         $(this).addClass("active").find(".parts_answer").slideDown();
-  //       }
-  //       return false;
-  //     });
-  //   });
-  // }, [])
+  const { insuranceData } = props;
 
+  const goToOrderProcessScreen = () => {
+    window.history.pushState({}, '', '/order-process');
+    window.location.reload();
+  }
 
-  return ( 
+  return (
     <>
-    {/* <ul className="accordion-list-parts-selection"> */}
-      {/* <li> */}
-          <div className='job_row_cont h_50'>
-            <div className='job_row_class pt_5'>
-            <div className='w_5'>
-                <div className="circle" id='angleDown'>
-                  <FontAwesomeIcon icon={faAngleDown} className='angle_down_ico' />
-                </div>
-              </div>
-              <div className='w_15'>{orderNo}</div>
-              <div className='w_15'>{caseNo} </div>
-              <div className='w_17'>{workshop}</div>
-              <div className='w_25'>{partDealer}</div>
-              <div className='w_15'>{currentStatus}</div>
-              <div className='w_17'>{process}</div>
-              <div className='w_15'>{date}</div>
-            </div>
+      <OrderSummaryBox />
+      <div className='dashboard_table_head mrgt_30 pdl_10'>
+        <div className='w_15'>Bestellnummer</div>
+        <div className='w_15'>Fallnummer</div>
+        <div className='w_17'>Werkstatt</div>
+        <div className='w_25'>Teilehändler</div>
+        <div className='w_15'>Status</div>
+        <div className='w_17'>Prozess</div>
+        <div className='w_15'>Datum</div>
+      </div>
+      {insuranceData?.map(item => (
+        <div className='job_row_cont h_50'>
+          <div className='job_row_class pt_5 pdl_10 cp' onClick={goToOrderProcessScreen}>
+            <div className='w_15'>{item.orderNo}</div>
+            <div className='w_15'>{item.caseNo} </div>
+            <div className='w_17'>{item.workshop}</div>
+            <div className='w_25'>{item.partDealer}</div>
+            <div className='w_15'>{item.currentStatus}</div>
+            <div className='w_17'>{item.process}</div>
+            <div className='w_15'>{item.date}</div>
           </div>
-          {/* <div className="parts_answer">
-            <PartsSelectionCard />
-          </div> */}
-          {/* </li> */}
-          {/* </ul> */}
-      </>
+        </div>
+      ))}
+    </>
   )
 }
 
