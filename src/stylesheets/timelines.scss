@@ -61,16 +61,13 @@ $width: 900px;
 .tml_txt {
   position: absolute;
   color: #262626;
-  top: calc(100% - 50px);
+  top: calc(100% - 80px);
   left: 10%;
   transform: translate(-50%, 0);
   display: inline-block;
   text-align: center;
   text-align: center;
-  width: $width / 5;
-//  &:after {
-//   content: 'Kalkulation einsehen';
-//  }
+  width: $width / 15;
 }
 
 .tml_list:last-child {

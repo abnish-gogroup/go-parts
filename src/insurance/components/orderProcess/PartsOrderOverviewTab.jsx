@@ -43,7 +43,7 @@ function PartsOrderOverviewTab(props) {
 
         <ul className="accordion-list-parts-tab">
           <li>
-            <div className='job_row_cont'>
+            <div className='job_row_cont h_60 pdt_20'>
               <div className='job_row_class'>
                 <div className='w_5'>
                   <div className="circle" id='angleDown'>
@@ -64,7 +64,7 @@ function PartsOrderOverviewTab(props) {
           </li>
 
           <li>
-            <div className='job_row_cont'>
+            <div className='job_row_cont h_60 pdt_20'>
               <div className='job_row_class'>
                 <div className='w_5'>
                   <div className="circle" id='angleDown'>
@@ -85,7 +85,7 @@ function PartsOrderOverviewTab(props) {
           </li>
 
           <li>
-            <div className='job_row_cont'>
+            <div className='job_row_cont h_60 pdt_20 bb_none'>
               <div className='job_row_class'>
                 <div className='w_5'>
                   <div className="circle" id='angleDown'>
@@ -113,7 +113,7 @@ function PartsOrderOverviewTab(props) {
           </li>
 
           <li>
-            <div className='job_row_cont bdr_1'>
+            <div className='job_row_cont bdr_1 h_60 pdt_20'>
               <div className='job_row_class'>
                 <div className='w_5'>
                   <div className="circle" id='angleDown'>

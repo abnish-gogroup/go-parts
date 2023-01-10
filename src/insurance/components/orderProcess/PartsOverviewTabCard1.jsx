@@ -7,7 +7,7 @@ function PartsOverviewTabCard1(props) {
 
   return (
     <div>
-      <div className='job_row_cont'>
+      <div className='job_row_cont bdr_1'>
         <div className='job_row_class'>
           <div className='w_5'></div>
           {/* <div className='w_5'></div> */}
