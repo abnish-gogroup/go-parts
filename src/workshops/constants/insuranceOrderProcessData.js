@@ -34,22 +34,22 @@ export const offerDetailsDataForMotorhaube = [
 
 export const offerDetailsDataForScheinwerfer = [
   {
-    partNumber: 'OE -Nr. 14222112 LED -Scheinwerfer',
+    partNumber: 'OE -Nr. 14222112 LED-Scheinwerfer',
     deliveryTime: '2 Tage',
     UVP: '',
     price: '',
     noOfParts: '1'
   },
   {
-    partNumber: 'OE -Nr. 14222112 LED -Scheinwerfer',
-    deliveryTime: '4 Tagen',
+    partNumber: 'OE -Nr. 14222112 LED-Scheinwerfer',
+    deliveryTime: '2 Tage',
     UVP: '€449',
     price: '',
     noOfParts: '1'
   },
   {
-    partNumber: 'OE -Nr. 14222112 LED -Scheinwerfer',
-    deliveryTime: 'Hinweis: Lieferung zu lang',
+    partNumber: 'OE -Nr. 14222112 LED-Scheinwerfer',
+    deliveryTime: '2 Tage',
     UVP: '€449',
     price: '',
     noOfParts: '1'

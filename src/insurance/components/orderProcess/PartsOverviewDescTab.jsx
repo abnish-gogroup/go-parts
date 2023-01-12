@@ -13,7 +13,7 @@ function PartsOverviewDescTab(props) {
             </div>
             <div className='w_20 h_20'>{item.partNumber}</div>
             <div className='w_20'></div>
-            <div className='w_25 pdl_10'>{item.deliveryTime}</div>
+            <div className={item.deliveryTime === 'Hinweis: Lieferung zu lang' ? 'clr_red w_25 pdl_10' : 'w_25 pdl_10'}>{item.deliveryTime}</div>
             <div className='w_20 pdl_10'>{item.UVP}</div>
             <div className='w_17 pdl_30'>{item.price}</div>
             <div className='w_17 txt_c'>{item.noOfParts}</div>

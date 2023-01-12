@@ -97,7 +97,7 @@ function PartsOrderOverviewTab(props) {
                 </div>
                 <div className='w_20'>Motorhaube</div>
                 <div className='w_20'>10/06/22 12:15</div>
-                <div className='w_25 pdl_20'>Hinweis: Lieferung zu lang</div>
+                <div className='w_25 pdl_20 clr_red'>Hinweis: Lieferung zu lang</div>
                 <div className='w_20'></div>
                 <div className='w_17 pdl_20'>€510</div>
                 <div className='w_17'></div>

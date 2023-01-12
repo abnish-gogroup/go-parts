@@ -10,10 +10,6 @@ function Timelines() {
 
   list.addEventListener('click', click)
   function click(e) {
-    // e.target.classList.contains('active')
-    // Set the correct target, we want to work with list items
-    // so if the current target is a span, we take its parent
-    
     let target = e.target;
     console.log('event', e);
     console.log('event child nodes', e.target.childNodes[1])
@@ -35,8 +31,8 @@ function Timelines() {
   },[])
 
   return (
-    <ol className='timeline_cont' id='timeline_cont'>
-      <li className='tml_list active'><span className='tml_txt'>Kalkulation Erstellt</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
+    <ol className='timeline_cont'>
+      <li className='tml_list active'><span className='tml_txt'>Kalkulation Erstellt</span><span className='hidden fs_12 visible'>Kalkulation einsehen</span></li>
       <li className='tml_list'><span className='tml_txt'>Teile Angefragt</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
       <li className="tml_list"><span className='tml_txt'>Teile Bestellt</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
       <li className='tml_list'><span className='tml_txt'>Teile Geliefert</span><span className='hidden fs_12'>Kalkulation einsehen</span></li>
