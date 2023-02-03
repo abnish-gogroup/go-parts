@@ -9,7 +9,7 @@ function InsuranceLogin() {
   const [userCred, setUserCred] = useState({ userName: '', password: '' });
   const [isEye, setIsEye] = useState(false);
   const [isError, setIsError] = useState({ userName: false, password: false });
-  const userLoginDetails = { userName: 'goinsurance', password: 'goparts@543&' };
+  const userLoginDetails = { userName: 'goparts', password: 'goparts@543&' };
   const navigate = useNavigate();
 
   useEffect(() => {

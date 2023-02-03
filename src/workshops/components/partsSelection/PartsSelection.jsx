@@ -17,9 +17,13 @@ function PartsSelection(props) {
     $(".checkedBox").click(function (e) {
       e.stopPropagation();
     })
+    $(".parts_answer").click(function (e) {
+      e.stopPropagation();
+    })
     $(document).ready(function () {
       $('.accordion-list-parts-selection > li > .parts_answer').hide();
-      $('.accordion-list-parts-selection > li').on('click', function () {
+      $('.accordion-list-parts-selection > li').on('click', function (e) {
+        e.stopPropagation();
         if ($(this).hasClass("active")) {
           $(this).removeClass("active").find(".parts_answer").slideUp();
         } else {
