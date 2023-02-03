@@ -4,30 +4,28 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faDashboard, faGear, faList, faBell } from '@fortawesome/free-solid-svg-icons';
 import Header from '../common/Header';
+import { useNavigate } from 'react-router-dom';
 
 function Sidebar(props) {
 	const { expanded, handleToggleSidebar } = props;
 	const [showSubMenu, setShowSubMenu] = useState(false);
+	const navigate = useNavigate();
 
 	console.log('location', window.location.pathname)
 	const goToDashboard = () => {
-		window.history.pushState({}, '', '/dashboard');
-		window.location.reload();
+		navigate('/dashboard');
 	}
 
 	const goToInsuranceDashboard = () => {
-		window.history.pushState({}, '', '/insurance-dashboard');
-		window.location.reload();
+		navigate('/insurance-dashboard');
 	}
 
 	const goToCreateJob = () => {
-		window.history.pushState({}, '', '/create-a-job');
-		window.location.reload();
+		navigate('/create-a-job');
 	}
 
 	const goToAllOrders = () => {
-		window.history.pushState({}, '', '/order-overview');
-		window.location.reload();
+		navigate('/order-overview');
 	}
 
 	const handleShowSubmenu =()=>{

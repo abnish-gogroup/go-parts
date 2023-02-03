@@ -4,20 +4,27 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { getHeaderName } from '../workshops/helper/Utils';
+import { useNavigate } from 'react-router-dom';
 // import NotificationsCart from '../common/NotificationsCart';
 
 
 function Header(props) {
   const { expanded } = props;
   const [showNotifications, setShowNotifications] = useState(false);
-
+  const navigate = useNavigate();
   const handleShow = () => {
     setShowNotifications(true);
   }
 
+  const handleLogout = (e) => {
+    if (e.target.value === 'logout') {
+      window.localStorage.removeItem('authDetails');
+      handleGoToIndexPage();
+    }
+  }
+
   const handleGoToIndexPage=()=>{
-    window.history.pushState({}, '', '/');
-    window.location.reload();
+      navigate('/');
   }
 
   return (
@@ -34,10 +41,11 @@ function Header(props) {
           </span>
         </div>
           <span className='profile_class'>Wilkommen <span className='fw_600'>Tom</span></span>
-          <select className='logout'>
+          <select className='logout cp' onChange={handleLogout}>
             <option value='welcome'>Ausloggen</option>
             <option value='profile'>profile</option>
             <option value='setting'>setting</option>
+            <option value='logout'>logout</option>
           </select>
         </div>
       </nav>

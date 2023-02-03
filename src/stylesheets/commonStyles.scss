@@ -6,6 +6,10 @@
   background-color: #1e8ea5 !important;
 }
 
+.border_red {
+  border: 1px solid red !important;
+}
+
 .pd_240 {
   padding: 30px 80px 0 240px;
 }
@@ -133,6 +137,14 @@
   padding-left: 10px;
 }
 
+.pdl_12 {
+  padding-left: 12px;
+}
+
+.pdl_5 {
+  padding-left: 5px;
+}
+
 .bb_none {
   border-bottom: none !important;
 }
@@ -202,4 +214,15 @@
 
 .bg_fafaff {
   background-color: #FAFAFF !important;
+}
+
+.prl {
+  position: relative;
+}
+
+.eye_style {
+  position: absolute;
+  margin-left: 260px;
+  padding-bottom: 10px;
+  color: #c4c4c4;
 }

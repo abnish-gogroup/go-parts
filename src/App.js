@@ -7,12 +7,7 @@ function App() {
   const store = configurePanelStore();
   return (
     <div className="App">
-      <Provider store={store}>
-      <MainContainer />
-      </Provider>
-      <header className="App-header">
         <RouterPath />
-      </header>
     </div>
   );
 }

@@ -2,17 +2,15 @@ import React from 'react';
 import '../../../stylesheets/thankYou.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 function ThankYouOrder(props) {
   const {expanded} = props;
-  const goToOrderOverview = () => {
-    window.history.pushState({}, '', './order-overview');
-    window.location.reload();
-  }
+  const navigate = useNavigate();
 
-  // const handleViewSpecificOrder = () => {
-  //   console.log('specific order')
-  // }
+  const goToOrderOverview = () => {
+    navigate('/order-overview');
+  }
 
   return (
     <div className={expanded ? 'main_container_thank_you pd_240': 'main_container_thank_you pd_140'}>
